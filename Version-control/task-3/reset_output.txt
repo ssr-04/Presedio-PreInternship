@@ -1,0 +1,51 @@
+(base) sachinsabariram@Sachins-MacBook-Air task-3 % chmod +x reset.sh
+(base) sachinsabariram@Sachins-MacBook-Air task-3 % ./reset.sh 
+Creating the project repo for reset demo...
+
+Initializing Git:
+Initialized empty Git repository in /Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/Version-control/task-3/git_reset_demo/.git/
+
+ Creating files...
+
+ Staging and commiting files:
+[main (root-commit) ed807ce] Initial commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 file1.txt
+ create mode 100644 file2.txt
+
+ Making more commits...
+[main e3aaa1c] Commit 1 - Added new change
+ 1 file changed, 1 insertion(+)
+[main 9f84603] Commit 2 - More edits
+ 1 file changed, 1 insertion(+)
+
+ Git commit history (before reset):
+* 9f84603 (HEAD -> main) Commit 2 - More edits
+* e3aaa1c Commit 1 - Added new change
+* ed807ce Initial commit
+
+ Demonstrating different types of reset
+
+ 1) Soft Reset (keeps changes staged)
+
+ 2) Default Reset (keeps changes unstaged)
+
+ 3) Hard Reset (removes changes completely)
+Choose reset type (1-3): 2
+
+ Performing Mixed(default) Reset...
+Unstaged changes after reset:
+M       file2.txt
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ Final Git commit history:
+* e3aaa1c (HEAD -> main) Commit 1 - Added new change
+* ed807ce Initial commit
+
+ Script execution completed!

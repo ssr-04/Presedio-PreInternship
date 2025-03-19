@@ -1,0 +1,11 @@
+**Undoing Changes and Reverting Commits**
+    
+**Objective:**
+
+- Experiment with undoing changes in your working directory and commits.
+
+**Requirements:**
+
+- Modify a tracked file and use `git checkout -- <file>` (or `git restore`) to undo changes.
+- Make a commit, then use `git revert` or `git reset` to see how you can undo a commit safely.
+- Explain the differences between these approaches.

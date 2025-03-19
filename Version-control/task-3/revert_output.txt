@@ -1,0 +1,37 @@
+(base) sachinsabariram@Sachins-MacBook-Air task-3 % chmod +x revert.sh
+(base) sachinsabariram@Sachins-MacBook-Air task-3 % ./revert.sh
+Creating the project repo for revert demo...
+
+Initializing Git:
+Initialized empty Git repository in /Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/Version-control/task-3/git_revert_demo/.git/
+
+Creating files...
+
+Staging and committing files:
+[main (root-commit) 654ffce] Initial commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 file1.txt
+ create mode 100644 file2.txt
+
+Making more commits...
+[main 681e0c4] Commit 1 - Added new change
+ 1 file changed, 1 insertion(+)
+[main 6a4b0a0] Commit 2 - More edits
+ 1 file changed, 1 insertion(+)
+
+Git commit history (before revert):
+* 6a4b0a0 (HEAD -> main) Commit 2 - More edits
+* 681e0c4 Commit 1 - Added new change
+* 654ffce Initial commit
+
+Reverting last commit...
+[main 24f41b9] Revert "Commit 2 - More edits"
+ Date: Wed Mar 19 12:59:09 2025 +0530
+ 1 file changed, 1 deletion(-)
+
+Final Git commit history:
+* 24f41b9 (HEAD -> main) Revert "Commit 2 - More edits"
+* 6a4b0a0 Commit 2 - More edits
+* 681e0c4 Commit 1 - Added new change
+
+ Script execution completed!

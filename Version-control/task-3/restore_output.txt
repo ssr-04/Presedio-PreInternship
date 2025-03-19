@@ -1,0 +1,62 @@
+(base) sachinsabariram@Sachins-MacBook-Air task-3 % chmod +x restore.sh
+(base) sachinsabariram@Sachins-MacBook-Air task-3 % ./restore.sh 
+Creating the project repo...
+
+Initializing git:
+Initialized empty Git repository in /Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/Version-control/task-3/git-repo/.git/
+
+Creating file.txt...
+
+The file.txt contains:
+Hello world
+
+Staging the file.txt...
+
+Displaying the git status:
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file.txt
+
+
+Adding extra line to file.txt...
+
+Now file.txt contains:
+Hello world
+This is a new line
+
+Output of git status:
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file.txt
+
+
+Undoing changes using git restore...
+
+After undo, file.txt contains:
+Hello world
+
+Git status:
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file.txt
+
+
+Note:git restore can also be used for unstaging a staged file
+End of script
