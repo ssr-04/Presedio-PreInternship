@@ -1,0 +1,20 @@
+(base) sachinsabariram@Sachins-MacBook-Air task-1 % chmod +x solution.sh
+(base) sachinsabariram@Sachins-MacBook-Air task-1 % ./solution.sh       
+Initialized empty Git repository in /Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/Version-control/task-1/my-git-repo/.git/
+[main (root-commit) 4650a77] added file1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+Switched to a new branch 'feature-branch'
+[feature-branch 7fe4b34] added a new feature
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
+Switched to branch 'main'
+Updating 4650a77..7fe4b34
+Fast-forward
+ feature.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
+Deleted branch feature-branch (was 7fe4b34).
+* 7fe4b34 (HEAD -> main) added a new feature
+* 4650a77 added file1
+Git repository setup completed successfully!
