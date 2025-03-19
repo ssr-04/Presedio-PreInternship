@@ -20,11 +20,11 @@ This task focuses on understanding and practicing the **fundamentals of Git vers
 9. **Displayed commit history** (`git log --oneline --graph --all`).  
 
 ## **File Structure**  
-task-1/
-│── solution.sh  # Shell script for automating the task
-│── output.txt   # Terminal output of the script execution
-│── task.txt     # Task description
-│── README.md    # Documentation of the task
+task-1/     
+│── solution.sh      
+│── output.txt    
+│── task.txt     
+│── README.md        
 
 ## **Commands Used**  
 | Command | Description |  
