@@ -1,0 +1,12 @@
+**Simulating and Resolving Merge Conflicts**
+
+**Objective:**
+
+- Create a scenario that produces a merge conflict and resolve it.
+
+**Requirements:**
+
+- Create two branches from the same commit.
+- Modify the same line(s) of code in a common file in both branches.
+- Attempt to merge the branches, observe the conflict, and resolve it manually.
+- Use `git status` and `git diff` to identify and resolve the conflicting changes.

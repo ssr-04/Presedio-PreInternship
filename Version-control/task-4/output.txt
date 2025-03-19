@@ -1,0 +1,79 @@
+(base) sachinsabariram@Sachins-MacBook-Air task-4 % chmod +x solution.sh
+(base) sachinsabariram@Sachins-MacBook-Air task-4 % ./solution.sh 
+Creating a new repository: merge-conflict-demo
+
+Initializing Git:
+Initialized empty Git repository in /Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/Version-control/task-4/merge-conflict-demo/.git/
+
+ Creating file.txt with initial content...
+
+ Making initial commit on main:
+[main (root-commit) 4920418] Initial commit with file.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file.txt
+
+ Creating 'feature-branch' and modifying file.txt...
+Switched to a new branch 'feature-branch'
+
+ Commiting feature-branch with changes:
+[feature-branch df38804] Modified file.txt in feature-branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ Switching back to 'main' and creating 'bugfix-branch'...
+Switched to branch 'main'
+Switched to a new branch 'bugfix-branch'
+
+ Modifying file.txt on bugfix-branch...
+
+ Commiting bugfix-branch with changes:
+[bugfix-branch 5ba4588] Modified file.txt in bugfix-branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ Switching to 'feature-branch' and attempting to merge 'bugfix-branch'...
+Switched to branch 'feature-branch'
+Auto-merging file.txt
+CONFLICT (content): Merge conflict in file.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+ Merge conflict detected!
+
+ Checking status of merge conflict: 
+On branch feature-branch
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ Checking differences in file: 
+diff --cc file.txt
+index 5bc2253,7431404..0000000
+--- a/file.txt
++++ b/file.txt
+@@@ -1,1 -1,1 +1,5 @@@
+++<<<<<<< HEAD
+ +This is a feature change.
+++=======
++ This is a bug fix change.
+++>>>>>>> bugfix-branch
+
+ Resolving merge conflict...
+Commiting with merge resolutions to complete the merge:
+[feature-branch 8d2359a] Resolved merge conflict between feature-branch and bugfix-branch
+
+ Final Git commit history:
+*   8d2359a (HEAD -> feature-branch) Resolved merge conflict between feature-branch and bugfix-branch
+|\  
+| * 5ba4588 (bugfix-branch) Modified file.txt in bugfix-branch
+* | df38804 Modified file.txt in feature-branch
+|/  
+* 4920418 (main) Initial commit with file.txt
+
+ Final content of file.txt:
+This line includes both feature and bug fix changes.
+
+ Merge conflict resolved successfully!
