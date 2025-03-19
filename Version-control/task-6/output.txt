@@ -1,0 +1,122 @@
+(base) sachinsabariram@Sachins-MacBook-Air task-6 % chmod +x solution.sh
+(base) sachinsabariram@Sachins-MacBook-Air task-6 % ./solution.sh 
+Initializing new Git repo - 'stash-repo':
+Initialized empty Git repository in /Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/Version-control/task-6/stash-repo/.git/
+
+Making the initial commit with readme.txt:
+[main (root-commit) e60022d] initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.txt
+
+ Adding one more file and making commit on main:
+[main c6f3141] added some file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 somefile.txt
+
+Creating and switching to feature_branch
+Switched to a new branch 'feature_branch'
+
+Making few changes and staging changes...
+
+Making some unstaged changes...
+
+>>> Git status before stashing:
+On branch feature_branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   feature1.txt
+        modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        feature2.txt
+
+
+Stashing the changes
+Saved working directory and index state On feature_branch: changes in feature_branch
+
+>>> Stashed changes:
+stash@{0}: On feature_branch: changes in feature_branch
+
+Switching to main and fixing something:
+Switched to branch 'main'
+[main d3c6312] some fixes
+ 1 file changed, 1 insertion(+)
+
+>>> Git log after fixing something in main:
+* d3c6312 (HEAD -> main) some fixes
+| *   423e6b0 (refs/stash) On feature_branch: changes in feature_branch
+|/|\  
+| | * 9ed58c7 untracked files on feature_branch: c6f3141 added some file
+| * 9deb5ab index on feature_branch: c6f3141 added some file
+|/  
+* c6f3141 (feature_branch) added some file
+* e60022d initial commit
+
+Switching to feature_branch
+Switched to branch 'feature_branch'
+
+>>> Stash list before applying stash:
+stash@{0}: On feature_branch: changes in feature_branch
+
+>>> Stash contents:
+diff --git a/feature1.txt b/feature1.txt
+new file mode 100644
+index 0000000..71cfb53
+--- /dev/null
++++ b/feature1.txt
+@@ -0,0 +1 @@
++working on a feature1
+diff --git a/readme.txt b/readme.txt
+index 76a2cdb..be8a450 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -1 +1,2 @@
+ started working on project
++added from feature branch
+
+Applying stashes:
+On branch feature_branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   feature1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        feature2.txt
+
+Dropped refs/stash@{0} (423e6b0ec746ddb1b7c07bfe49cd87ea6a4d5429)
+
+>>> Git status after popping stash:
+On branch feature_branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   feature1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        feature2.txt
+
+
+Commiting feature_branch
+[feature_branch 708115c] added some features
+ 3 files changed, 3 insertions(+)
+ create mode 100644 feature1.txt
+ create mode 100644 feature2.txt
+
+>>> Final Git log:
+* 708115c (HEAD -> feature_branch) added some features
+| * d3c6312 (main) some fixes
+|/  
+* c6f3141 added some file
+* e60022d initial commit

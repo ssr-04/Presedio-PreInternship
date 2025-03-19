@@ -1,0 +1,12 @@
+**Stashing Changes for Context Switching**
+
+**Objective:**
+
+- Learn how to use Git stash to save uncommitted work temporarily.
+
+**Requirements:**
+
+- Make changes in your working directory without committing.
+- Use `git stash` to save these changes.
+- Switch branches, perform some work, then return and reapply your stashed changes with `git stash pop`.
+- Optionally, demonstrate how to view and manage multiple stashes using `git stash list` and `git stash drop`.
