@@ -1,0 +1,120 @@
+# As the `rebase --interactive` involves opening of text editors, it can't be implemented as a bash script so the terminal output for the rebase-demo is given below
+
+(base) sachinsabariram@Sachins-MacBook-Air task-5 % git init rebase-demo
+Initialized empty Git repository in /Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/Version-control/task-5/rebase-demo/.git/
+(base) sachinsabariram@Sachins-MacBook-Air task-5 % cd rebase-demo
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % echo "Project started" > README.md
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git add .
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git commit -m "initial commit"
+[main (root-commit) 4db5a3d] initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % echo "Base app code" > app.py
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git add .
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git commit -m "base code"
+[main 94a4079] base code
+ 1 file changed, 1 insertion(+)
+ create mode 100644 app.py
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git log --oneline --graph --decorate
+* 94a4079 (HEAD -> main) base code
+* 4db5a3d initial commit
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git switch -c feature_branch
+Switched to a new branch 'feature_branch'
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % echo "Feature v1 implementation" > feature.py
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git add .
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git commit -m "created feature"
+[feature_branch cd10438] created feature
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.py
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % echo "fixed typos in feature" >> feature.py
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git add .
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git commit -m "fixed typos"
+[feature_branch ac6ce19] fixed typos
+ 1 file changed, 1 insertion(+)
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git log --oneline --graph --decorate
+* ac6ce19 (HEAD -> feature_branch) fixed typos
+* cd10438 created feature
+* 94a4079 (main) base code
+* 4db5a3d initial commit
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git switch main
+Switched to branch 'main'
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % echo "Fixed some issues in base code" >> app.py
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git add .
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git commit -m "fixed base"
+[main 2a2c474] fixed base
+ 1 file changed, 1 insertion(+)
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git log --oneline --graph --decorate --all     
+* 2a2c474 (HEAD -> main) fixed base
+| * ac6ce19 (feature_branch) fixed typos
+| * cd10438 created feature
+|/  
+* 94a4079 base code
+* 4db5a3d initial commit
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git branch
+  feature_branch
+* main
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git rebase -i HEAD~1
+[detached HEAD 48fadaa] improved base
+ Date: Wed Mar 19 17:16:52 2025 +0530
+ 1 file changed, 1 insertion(+)
+Successfully rebased and updated refs/heads/main.
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git log --oneline --graph --decorate --all
+* 48fadaa (HEAD -> main) improved base
+| * ac6ce19 (feature_branch) fixed typos
+| * cd10438 created feature
+|/  
+* 94a4079 base code
+* 4db5a3d initial commit
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git switch feature_branch
+Switched to branch 'feature_branch'
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git rebase main
+Successfully rebased and updated refs/heads/feature_branch.
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git log --oneline --graph --decorate --all
+* f285b85 (HEAD -> feature_branch) fixed typos
+* 45d0f51 created feature
+* 48fadaa (main) improved base
+* 94a4079 base code
+* 4db5a3d initial commit
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git branch
+* feature_branch
+  main
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git rebase -i HEAD~2
+[detached HEAD 255a460] Implemented feature with typo fixes
+ Date: Wed Mar 19 17:12:58 2025 +0530
+ 1 file changed, 2 insertions(+)
+ create mode 100644 feature.py
+Successfully rebased and updated refs/heads/feature_branch.
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git log --oneline --graph --decorate --all
+* 255a460 (HEAD -> feature_branch) Implemented feature with typo fixes
+* 48fadaa (main) improved base
+* 94a4079 base code
+* 4db5a3d initial commit
+
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git switch main  
+Switched to branch 'main'
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git merge feature_branch
+Updating 48fadaa..255a460
+Fast-forward
+ feature.py | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 feature.py
+ 
+(base) sachinsabariram@Sachins-MacBook-Air rebase-demo % git log --oneline --graph --decorate --all
+* 255a460 (HEAD -> main, feature_branch) Implemented feature with typo fixes
+* 48fadaa improved base
+* 94a4079 base code
+* 4db5a3d initial commit
