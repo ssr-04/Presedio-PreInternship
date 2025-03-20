@@ -1,0 +1,71 @@
+(base) sachinsabariram@Sachins-MacBook-Air task-8 % git init "git-hooks-demo"
+Initialized empty Git repository in /Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/Version-control/task-8/git-hooks-demo/.git/
+(base) sachinsabariram@Sachins-MacBook-Air task-8 % cd git-hooks-demo
+
+(base) sachinsabariram@Sachins-MacBook-Air git-hooks-demo % echo "def add(a, b):" > main.py 
+(base) sachinsabariram@Sachins-MacBook-Air git-hooks-demo % echo "    return a + b" >> main.py
+
+(base) sachinsabariram@Sachins-MacBook-Air git-hooks-demo % echo "from main import add" > test_main.py
+echo "def test_addition():" >> test_main.py
+echo "    assert add(2, 3) == 5" >> test_main.py
+
+(base) sachinsabariram@Sachins-MacBook-Air git-hooks-demo % ls        
+main.py         test_main.py
+(base) sachinsabariram@Sachins-MacBook-Air git-hooks-demo % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        main.py
+        test_main.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) sachinsabariram@Sachins-MacBook-Air git-hooks-demo % cd ..
+(base) sachinsabariram@Sachins-MacBook-Air task-8 % ls
+git-hooks-demo  output.txt      solution.py     task.txt
+
+(base) sachinsabariram@Sachins-MacBook-Air task-8 % cp solution.py ./git-hooks-demo/.git/ho
+oks/pre-commit
+(base) sachinsabariram@Sachins-MacBook-Air task-8 % cd git-hooks-demo 
+
+(base) sachinsabariram@Sachins-MacBook-Air git-hooks-demo % chmod +x .git/hooks/pre-commit
+
+(base) sachinsabariram@Sachins-MacBook-Air git-hooks-demo % git add .
+
+(base) sachinsabariram@Sachins-MacBook-Air git-hooks-demo % git commit -m "Initial commit"
+Running pre-commit checks...
+Checking Python files: main.py, test_main.py
+Running flake8...
+test_main.py:2:1: E302 expected 2 blank lines, found 0
+Linting failed! Fix the issues and try again.
+(base) sachinsabariram@Sachins-MacBook-Air git-hooks-demo % echo "from main import add" > test_main.py
+echo "" >> test_main.py
+echo "" >> test_main.py
+echo "def test_addition():" >> test_main.py
+echo "    assert add(2, 3) == 5" >> test_main.py
+
+(base) sachinsabariram@Sachins-MacBook-Air git-hooks-demo % git add .
+
+(base) sachinsabariram@Sachins-MacBook-Air git-hooks-demo % git commit -m "Initial commit"
+Running pre-commit checks...
+Checking Python files: main.py, test_main.py
+Running flake8...
+No linting issues detected!
+Running pytest...
+=================================== test session starts ===================================
+platform darwin -- Python 3.9.15, pytest-8.0.2, pluggy-1.4.0
+rootdir: /Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/Version-control/task-8/git-hooks-demo
+plugins: time-machine-2.14.2, dash-2.18.1, anyio-4.1.0
+collected 1 item                                                                          
+
+test_main.py .                                                                      [100%]
+
+==================================== 1 passed in 0.01s ====================================
+All tests passed!
+Pre-commit checks passed! Proceeding with commit.
+[main (root-commit) a1b9486] Initial commit
+ 2 files changed, 5 insertions(+)
+ create mode 100644 main.py
+ create mode 100644 test_main.py
