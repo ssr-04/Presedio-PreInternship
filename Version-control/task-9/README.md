@@ -127,4 +127,6 @@ git branch -d task-9  # Delete the local branch
 
 This workflow **improves code quality and collaboration** in team projects.
 
+- **Note: After removing a branch from the remote, the local will still show when viewing all branches so to update the remote branches info locally use (`git fetch --prune`)**
+
 ---
