@@ -1,0 +1,265 @@
+(base) sachinsabariram@Sachins-MacBook-Air task-10 % git clone https://github.com/ssr-04/Test-repo.git
+Cloning into 'Test-repo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+(base) sachinsabariram@Sachins-MacBook-Air task-10 % cd Test-repo
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % echo "Initial code in app.py" > app.py
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git add .
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git commit -m "Initial commit on main"
+[main 617b2b4] Initial commit on main
+ 1 file changed, 1 insertion(+)
+ create mode 100644 app.py
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git branch feature
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git branch bug-fixes
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git branch release
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git branch -a
+  bug-fixes
+  feature
+* main
+  release
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git switch feature
+Switched to branch 'feature'
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % echo "Feature part 1" >> app.py
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git commit -am "Feature commit 1: Added part 1"
+[feature c67b7d8] Feature commit 1: Added part 1
+ 1 file changed, 1 insertion(+)
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % echo "Feature part 2" >> app.py
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git commit -am "Feature commit 2: Added part 2"
+[feature b1603f0] Feature commit 2: Added part 2
+ 1 file changed, 1 insertion(+)
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git switch bug-fixes
+Switched to branch 'bug-fixes'
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % echo "Major bug fix 1" >> app.py 
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git commit -am "Major bug fixed"
+[bug-fixes b0d6e9a] Major bug fixed
+ 1 file changed, 1 insertion(+)
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % echo "Minor bug fix 1" >> app.py
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git commit -am "Minor bug fixed"
+[bug-fixes 947664c] Minor bug fixed
+ 1 file changed, 1 insertion(+)
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git switch feature
+Switched to branch 'feature'
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git push origin feature
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 965 bytes | 965.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/ssr-04/Test-repo/pull/new/feature
+remote: 
+To https://github.com/ssr-04/Test-repo.git
+ * [new branch]      feature -> feature
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git log --oneline --graph --decorate --all
+* 947664c (bug-fixes) Minor bug fixed
+* b0d6e9a Major bug fixed
+| * b1603f0 (HEAD -> feature, origin/feature) Feature commit 2: Added part 2
+| * c67b7d8 Feature commit 1: Added part 1
+|/  
+* 617b2b4 (release, main) Initial commit on main
+* 789d443 (origin/main, origin/HEAD) Initial commit
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git cherry-pick b0d6e9a
+Auto-merging app.py
+CONFLICT (content): Merge conflict in app.py
+error: could not apply b0d6e9a... Major bug fixed
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git cherry-pick --continue".
+hint: You can instead skip this commit with "git cherry-pick --skip".
+hint: To abort and get back to the state before "git cherry-pick",
+hint: run "git cherry-pick --abort".
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git add app.py
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git cherry-pick --continue
+[feature 12ba555] Merge with Major bug fix
+ Date: Thu Mar 20 16:56:37 2025 +0530
+ 1 file changed, 1 insertion(+)
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git log --oneline --graph --decorate --all
+* 12ba555 (HEAD -> feature) Merge with Major bug fix
+* b1603f0 (origin/feature) Feature commit 2: Added part 2
+* c67b7d8 Feature commit 1: Added part 1
+| * 947664c (bug-fixes) Minor bug fixed
+| * b0d6e9a Major bug fixed
+|/  
+* 617b2b4 (release, main) Initial commit on main
+* 789d443 (origin/main, origin/HEAD) Initial commit
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git rebase -i HEAD~3
+
+[detached HEAD 9996f3c] Combined features
+ Date: Thu Mar 20 16:54:18 2025 +0530
+ 1 file changed, 2 insertions(+)
+Successfully rebased and updated refs/heads/feature.
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git log --oneline --graph --decorate --all
+* 31f3aa5 (HEAD -> feature) Merge with Major bug fix
+* 9996f3c Combined features
+| * 947664c (bug-fixes) Minor bug fixed
+| * b0d6e9a Major bug fixed
+|/  
+| * b1603f0 (origin/feature) Feature commit 2: Added part 2
+| * c67b7d8 Feature commit 1: Added part 1
+|/  
+* 617b2b4 (release, main) Initial commit on main
+* 789d443 (origin/main, origin/HEAD) Initial commit
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git push origin feature                   
+To https://github.com/ssr-04/Test-repo.git
+ ! [rejected]        feature -> feature (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ssr-04/Test-repo.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git push --force-with-lease origin feature 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 675 bytes | 675.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/ssr-04/Test-repo.git
+ + b1603f0...31f3aa5 feature -> feature (forced update)
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git log --oneline --graph --decorate --all
+* 31f3aa5 (HEAD -> feature, origin/feature) Merge with Major bug fix
+* 9996f3c Combined features
+| * 947664c (bug-fixes) Minor bug fixed
+| * b0d6e9a Major bug fixed
+|/  
+* 617b2b4 (release, main) Initial commit on main
+* 789d443 (origin/main, origin/HEAD) Initial commit
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git switch bug-fixes
+Switched to branch 'bug-fixes'
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git reset --hard HEAD~1
+HEAD is now at b0d6e9a Major bug fixed
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git log --oneline --graph --decorate --all
+* 31f3aa5 (origin/feature, feature) Merge with Major bug fix
+* 9996f3c Combined features
+| * b0d6e9a (HEAD -> bug-fixes) Major bug fixed
+|/  
+* 617b2b4 (release, main) Initial commit on main
+* 789d443 (origin/main, origin/HEAD) Initial commit
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git switch feature
+Switched to branch 'feature'
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git reflog bug-fixes
+b0d6e9a (bug-fixes) bug-fixes@{0}: reset: moving to HEAD~1
+947664c bug-fixes@{1}: commit: Minor bug fixed
+b0d6e9a (bug-fixes) bug-fixes@{2}: commit: Major bug fixed
+617b2b4 (release, main) bug-fixes@{3}: branch: Created from main
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git branch recovery-bug-branch 947664c
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git branch -a
+  bug-fixes
+* feature
+  main
+  recovery-bug-branch
+  release
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/feature
+  remotes/origin/main
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git log --oneline --graph --decorate --all
+* 31f3aa5 (HEAD -> feature, origin/feature) Merge with Major bug fix
+* 9996f3c Combined features
+| * 947664c (recovery-bug-branch) Minor bug fixed
+| * b0d6e9a (bug-fixes) Major bug fixed
+|/  
+* 617b2b4 (release, main) Initial commit on main
+* 789d443 (origin/main, origin/HEAD) Initial commit
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git merge recovery-bug-branch
+Auto-merging app.py
+CONFLICT (content): Merge conflict in app.py
+Automatic merge failed; fix conflicts and then commit the result.
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git status
+On branch feature
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   app.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git add app.py
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git merge --continue
+[feature 1e79373] Merge with recovery minor bugfix
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git log --oneline --graph --decorate --all
+*   1e79373 (HEAD -> feature) Merge with recovery minor bugfix
+|\  
+| * 947664c (recovery-bug-branch) Minor bug fixed
+| * b0d6e9a (bug-fixes) Major bug fixed
+* | 31f3aa5 (origin/feature) Merge with Major bug fix
+* | 9996f3c Combined features
+|/  
+* 617b2b4 (release, main) Initial commit on main
+* 789d443 (origin/main, origin/HEAD) Initial commit
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git branch -d bug-fixes
+Deleted branch bug-fixes (was b0d6e9a).
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git branch -m "recovery-bug-branch" "bug-fixes"
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git switch release
+Switched to branch 'release'
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git merge feature
+Updating 617b2b4..1e79373
+Fast-forward
+ app.py | 4 ++++
+ 1 file changed, 4 insertions(+)
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git merge feature
+Updating 617b2b4..1e79373
+Fast-forward
+ app.py | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git log --oneline --graph --decorate --all     
+*   1e79373 (HEAD -> main, release, feature) Merge with recovery minor bugfix
+|\  
+| * 947664c (bug-fixes) Minor bug fixed
+| * b0d6e9a Major bug fixed
+* | 31f3aa5 (origin/feature) Merge with Major bug fix
+* | 9996f3c Combined features
+|/  
+* 617b2b4 Initial commit on main
+* 789d443 (origin/main, origin/HEAD) Initial commit
+
+
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git push
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 1002 bytes | 1002.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ssr-04/Test-repo.git
+   789d443..1e79373  main -> main
+(base) sachinsabariram@Sachins-MacBook-Air Test-repo % git log --oneline --graph --decorate --all
+*   1e79373 (HEAD -> main, origin/main, origin/HEAD, release, feature) Merge with recovery minor bugfix
+|\  
+| * 947664c (bug-fixes) Minor bug fixed
+| * b0d6e9a Major bug fixed
+* | 31f3aa5 (origin/feature) Merge with Major bug fix
+* | 9996f3c Combined features
+|/  
+* 617b2b4 Initial commit on main
+* 789d443 Initial commit
