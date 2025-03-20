@@ -1,0 +1,89 @@
+(base) sachinsabariram@Sachins-MacBook-Air Version-control % git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+(base) sachinsabariram@Sachins-MacBook-Air Version-control % git switch -c task-9
+Switched to a new branch 'task-9'
+(base) sachinsabariram@Sachins-MacBook-Air Version-control % git branch -a
+  main
+* task-9
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+(base) sachinsabariram@Sachins-MacBook-Air Version-control % mkdir task-9
+(base) sachinsabariram@Sachins-MacBook-Air Version-control % cd task-9
+(base) sachinsabariram@Sachins-MacBook-Air task-9 % touch task.txt
+(base) sachinsabariram@Sachins-MacBook-Air task-9 % head -n 3 task.txt
+**Working with Remote Repositories and Collaboration**
+
+**Objective:**
+(base) sachinsabariram@Sachins-MacBook-Air task-9 % touch output.txt
+(base) sachinsabariram@Sachins-MacBook-Air task-9 % touch README.md
+(base) sachinsabariram@Sachins-MacBook-Air task-9 % git add .
+(base) sachinsabariram@Sachins-MacBook-Air task-9 % git status
+On branch task-9
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   README.md
+        new file:   output.txt
+        new file:   task.txt
+
+(base) sachinsabariram@Sachins-MacBook-Air task-9 % git commit -m "initial commit in task-9
+ branch"
+[task-9 3fb66bf] initial commit in task-9 branch
+ 3 files changed, 12 insertions(+)
+ create mode 100644 Version-control/task-9/README.md
+ create mode 100644 Version-control/task-9/output.txt
+ create mode 100644 Version-control/task-9/task.txt
+
+(base) sachinsabariram@Sachins-MacBook-Air task-9 % git push origin task-9
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 758 bytes | 758.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'task-9' on GitHub by visiting:
+remote:      https://github.com/ssr-04/Presedio-PreInternship/pull/new/task-9
+remote: 
+To https://github.com/ssr-04/Presedio-PreInternship.git
+ * [new branch]      task-9 -> task-9
+
+(base) sachinsabariram@Sachins-MacBook-Air task-9 % git branch -a
+  main
+* task-9
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/task-9
+(base) sachinsabariram@Sachins-MacBook-Air task-9 % git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+(base) sachinsabariram@Sachins-MacBook-Air task-9 % git pull origin main
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 910 bytes | 455.00 KiB/s, done.
+From https://github.com/ssr-04/Presedio-PreInternship
+ * branch            main       -> FETCH_HEAD
+   06ac69f..b8ed41d  main       -> origin/main
+Updating 06ac69f..b8ed41d
+Fast-forward
+ Version-control/task-9/README.md  |  0
+ Version-control/task-9/output.txt |  0
+ Version-control/task-9/task.txt   | 12 ++++++++++++
+ 3 files changed, 12 insertions(+)
+ create mode 100644 Version-control/task-9/README.md
+ create mode 100644 Version-control/task-9/output.txt
+ create mode 100644 Version-control/task-9/task.txt
+(base) sachinsabariram@Sachins-MacBook-Air task-9 % ls 
+README.md       output.txt      task.txt
+(base) sachinsabariram@Sachins-MacBook-Air task-9 % git branch -d task-9
+Deleted branch task-9 (was 3fb66bf).
+(base) sachinsabariram@Sachins-MacBook-Air task-9 % git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/task-9
