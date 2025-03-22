@@ -10,6 +10,8 @@ This project implements a **CSS-only dropdown navigation menu**, meeting the req
 ✔ A **hover-based dropdown** using `:hover` and smooth transitions.  
 ✔ A **mobile-friendly fallback** using checkboxes to toggle submenus.  
 
+Demo live @ [GitHub Pages](https://ssr-04.github.io/Presedio-PreInternship/HTML_CSS/task-4/index.html)
+
 ---
 
 ## **🎯 Task Objectives & How They Are Achieved**  
