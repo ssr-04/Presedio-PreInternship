@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>CSS Dropdown</title>
+        <link rel="stylesheet" href="./styles.css"/>
+    </head>
+    <body>
+        <nav id="nav-menu">
+            <a href="#nav-menu" class="hamburger">Menu</a>
+            <ul class="nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li>
+                    <a href="#Mobile">Mobile</a>
+                    <input type="checkbox" id="toggle-mobile" class="submenu-toggle">
+                    <label for="toggle-mobile" class="submenu-label">+</label>
+                    <ul class="submenu">
+                        <li><a href="#Xioami">Xioami Series</a></li>
+                        <li><a href="#Redmi">Redmi Series</a></li>
+                        <li><a href="#Poco">Poco Series</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Wearables">Wearables</a>
+                    <input type="checkbox" id="toggle-wearables" class="submenu-toggle">
+                    <label for="toggle-wearables" class="submenu-label">+</label>
+                    <ul class="submenu">
+                        <li><a href="#SmartWatch">Smart Watches</a></li>
+                        <li><a href="#SmartBand">Smart Bands</a></li>
+                        <li><a href="#TWS">TWS Buds</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#SmartHome">Smart Home</a>
+                    <input type="checkbox" id="toggle-smarthome" class="submenu-toggle">
+                    <label for="toggle-smarthome" class="submenu-label">+</label>
+                    <ul class="submenu">
+                        <li><a href="#TV">TV and Media</a></li>
+                        <li><a href="#Security">Home Security</a></li>
+                        <li><a href="#Lighting">Smart Lighting</a></li>
+                    </ul>
+                </li>
+                <li><a href="#About">About us</a></li>
+                <li><a href="#Contact">Contact us</a></li>
+            </ul>
+        </nav>
+        <main id="Home">
+            <section id="Mobile">
+                <section id="Xioami">
+                    <h3>Xioami</h3>
+                </section>
+                <section id="Redmi">
+                    <h3>Redmi</h3>
+                </section>
+                <section id="Poco">
+                    <h3>Poco</h3>
+                </section>
+            </section>
+            <section id="Wearables">
+                <section id="SmartWatch">
+                    <h3>SmartWatch</h3>
+                </section>
+                <section id="SmartBand">
+                    <h3>SmartBand</h3>
+                </section>
+                <section id="TWS">
+                    <h3>TWS</h3>
+                </section>
+            </section>
+            <section id="SmartHome">
+                <section id="TV">
+                    <h3>TV</h3>
+                </section>
+                <section id="Security">
+                    <h3>Security</h3>
+                </section>
+                <section id="Lighting">
+                    <h3>Lighting</h3>
+                </section>
+            </section>
+            <section id="About">
+                <h3>About Us</h3>
+            </section>
+            <section id="Contact">
+                <h3>Contact Us</h3>
+            </section>
+        </main>
+    </body>
+</html>

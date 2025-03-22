@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0f1115;
+    color: #f0f0f0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(121, 40, 202, 0.15), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(255, 0, 128, 0.15), transparent 40%);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+nav .hamburger {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+  
+nav li {
+    position: relative; /* For absolute positioning of submenu */
+    font-size: 1.2rem;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 150px;
+    z-index: 1;
+    flex-direction: column; /* Vertical layout */
+    gap: 0.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+nav li:hover > ul {
+    display: flex;
+    opacity: 1;
+}
+  
+nav ul ul li {
+    display: block;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-size: 3rem;
+    background: linear-gradient(90deg, rgb(210, 35, 131), rgb(93, 35, 210));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+li input,label{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    nav .hamburger {
+        display: block;
+        font-size: 1.7rem;
+        color: rgb(224, 211, 211);
+        width: 100%;
+        text-align: center;
+        background: #242425;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column; /* Stack vertically on mobile */
+    }
+    
+    /* When nav-menu is the target, display nav-links */
+    #nav-menu:target .nav-links {
+        display: flex;
+    }
+    
+    /* Display menu items in a row for link and toggle label */
+    .nav-links li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 1.5rem;
+        position: relative; /* Added for submenu positioning */
+    }
+    
+    /* Ensure the menu link and toggle label have separate click areas */
+    .nav-links li a {
+        flex: 1;
+        z-index: 1;
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .nav-links li .submenu-label {
+        flex: 0;
+        z-index: 2; /* sit on top so its click doesn't trigger parent link */
+        cursor: pointer;
+        color: white;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        user-select: none;
+        display: inline-block;
+    }
+    
+    /* Initially hide submenu and position it to the right of the menu item */
+    .nav-links li .submenu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 10%; /* Appear to the right */
+        background-color: inherit;
+        padding: 0.5rem;
+        min-width: 150px;
+        z-index: 3;
+    }
+    
+    .nav-links li input.submenu-toggle {
+        display: none;
+    }
+    
+    /* When the submenu toggle is checked, display submenu */
+    .nav-links li input.submenu-toggle:checked + .submenu-label + .submenu {
+        display: flex;
+    }
+    
+    /* Remove hover based submenu on mobile */
+    nav li:hover > ul {
+        display: none;
+    }
+}
+
+
