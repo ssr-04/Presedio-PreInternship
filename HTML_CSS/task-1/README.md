@@ -5,6 +5,8 @@
 ## **📌 Objective**  
 This project fulfills the objective of **Task 1: Static Webpage Layout** by implementing a **single-page website** using **semantic HTML** elements and CSS for styling, spacing, and responsiveness.  
 
+Demo live @ [GitHub Pages](https://ssr-04.github.io/Presedio-PreInternship/HTML_CSS/task-1/index.html)
+
 ## **📑 Project Breakdown (Satisfying Task Requirements)**  
 
 ### **1️⃣ Semantic HTML Structure**  
