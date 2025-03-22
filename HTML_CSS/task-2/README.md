@@ -1,4 +1,3 @@
----
 
 # **CSS Card Component with Hover Effects**  
 
@@ -8,6 +7,8 @@ This project fulfills the objective of **Task 2: CSS Card Component with Hover E
 - A **title**, and  
 - A **description**,  
 along with **hover effects, shadows, and responsive design**.  
+
+Demo live @ [GitHub Pages](https://ssr-04.github.io/Presedio-PreInternship/HTML_CSS/task-2/index.html)
 
 ---
 
