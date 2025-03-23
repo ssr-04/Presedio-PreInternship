@@ -4,6 +4,8 @@
 ## **📜 Overview**  
 This project implements a **pure CSS tabbed content interface**, fulfilling the requirements of **Task 6: Tabbed Content Interface**. It enables users to **switch between content sections** using tabs, with smooth transitions, without requiring JavaScript.  
 
+Demo live @ [GitHub Pages](https://ssr-04.github.io/Presedio-PreInternship/HTML_CSS/task-6/index.html)
+
 This implementation achieves:  
 ✅ **Tab switching using radio buttons and labels**  
 ✅ **Hiding and displaying content using `:checked` pseudo-class**  
