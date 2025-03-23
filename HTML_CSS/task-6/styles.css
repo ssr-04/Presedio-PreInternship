@@ -1,0 +1,74 @@
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Set background with gradient and ensure full-page height */
+body {
+    font-family: 'Arial', sans-serif; 
+    height: 100vh;
+    background: linear-gradient(to right, rgb(44, 86, 61), rgb(88, 58, 134));
+}
+
+/* Tab container styling */
+.tabs {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background: rgb(58, 56, 56);
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hide radio buttons */
+.tabs input {
+    display: none;
+}
+
+/* Tab label styling */
+.tabs label {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.7rem 2rem;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Active tab styling */
+#tab1:checked ~ .tabs label[for="tab1"],
+#tab2:checked ~ .tabs label[for="tab2"] {
+    background: rgb(21, 20, 20);
+    color: wheat;
+}
+
+/* Content container styling */
+.tab-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Georgia', serif;
+    height: 80vh;
+    color: wheat;
+}
+
+/* Hide all tab content by default */
+.tab-content > div {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Show only the selected tab content */
+#tab1:checked ~ .tab-content #content1,
+#tab2:checked ~ .tab-content #content2 {
+    opacity: 1;
+    transform: translateY(0);
+}

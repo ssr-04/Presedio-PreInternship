@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabbed Interface</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Hidden radio buttons for tab selection -->
+  <input type="radio" id="tab1" name="tabs" checked aria-hidden="true" hidden/>
+  <input type="radio" id="tab2" name="tabs" aria-hidden="true" hidden/>
+
+  <!-- Tab controls (Labels act as clickable tabs) -->
+  <div class="tabs" role="tablist">
+    <label for="tab1" role="tab" aria-controls="content1" tabindex="0">Ingredients</label>
+    <label for="tab2" role="tab" aria-controls="content2" tabindex="0">Instructions</label>
+  </div>
+
+  <!-- Tab content sections -->
+  <div class="tab-content">
+    <div id="content1" role="tabpanel">
+      <h2>Ingredients</h2>
+      <p>This is the content for Tab 1.</p>
+    </div>
+    <div id="content2" role="tabpanel">
+      <h2>Instructions</h2>
+      <p>This is the content for Tab 2.</p>
+    </div>
+  </div>
+
+</body>
+</html>
