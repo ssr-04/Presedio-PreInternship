@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pure CSS Carousel</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="slider">
+    <!-- Radio buttons for manual control; note: no radio is checked by default -->
+    <input type="radio" name="slide" id="slide1">
+    <input type="radio" name="slide" id="slide2">
+    <input type="radio" name="slide" id="slide3">
+    <input type="radio" name="slide" id="slide4">
+
+    <!-- Slides container -->
+    <div class="slides">
+      <div class="slide">
+        <img src="https://picsum.photos/800/400?1" alt="Slide 1">
+      </div>
+      <div class="slide">
+        <img src="https://picsum.photos/800/400?2" alt="Slide 2">
+      </div>
+      <div class="slide">
+        <img src="https://picsum.photos/800/400?3" alt="Slide 3">
+      </div>
+      <div class="slide">
+        <img src="https://picsum.photos/800/400?4" alt="Slide 4">
+      </div>
+    </div>
+
+    <!-- Manual navigation buttons -->
+    <div class="navigation-manual">
+      <label for="slide1" class="manual-btn"></label>
+      <label for="slide2" class="manual-btn"></label>
+      <label for="slide3" class="manual-btn"></label>
+      <label for="slide4" class="manual-btn"></label>
+    </div>
+  </div>
+</body>
+</html>
