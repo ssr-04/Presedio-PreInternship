@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Based Modal</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main>
+        <!-- Button to open :target modal -->
+        <a href="#modal1" class="open-modal-button">Open Modal (Target)</a>
+
+        <!-- Button to open :checked modal -->
+        <label for="modal-toggle" class="open-modal-button">Open Modal (Checked)</label>
+
+        <!-- Hidden checkbox for :checked modal -->
+        <input type="checkbox" id="modal-toggle" class="modal-toggle">
+
+        <!-- Modal using :target method -->
+        <div id="modal1" class="modal-container">
+            <div class="modal">
+                <h3>Confirmation</h3>
+                <p>Modal implemented using the CSS :target pseudo-class.</p>
+                <a href="#" class="close-btn">Okay</a>
+            </div>
+        </div>
+
+        <!-- Modal using :checked method -->
+        <div class="modal-container checked-modal">
+            <div class="modal">
+                <h3>Success</h3>
+                <p>Modal implemented using the CSS :checked pseudo-class.</p>
+                <label for="modal-toggle" class="close-btn">Close</label>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
