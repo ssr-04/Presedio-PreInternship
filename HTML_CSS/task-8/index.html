@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Accordion</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="accordion">
+    <div class="accordion-item">
+      <input type="checkbox" id="section1" class="accordion-input">
+      <label for="section1" class="accordion-label"> What does this code do?</label>
+      <div class="accordion-content">
+        <p> This code creates an interactive accordion component using HTML and CSS. Clicking on the labels expands or collapses the associated content sections.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <input type="checkbox" id="section2" class="accordion-input">
+      <label for="section2" class="accordion-label">How does it know which content to show or hide?</label>
+      <div class="accordion-content">
+        <p> It uses the "checkbox hack." Hidden checkboxes and their associated labels control the visibility of the content sections using CSS's :checked pseudo-class.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <input type="checkbox" id="section3" class="accordion-input">
+      <label for="section3" class="accordion-label">Can I change the look of the accordion?</label>
+      <div class="accordion-content">
+        <p> Yes! The CSS styles the accordion's appearance. You can modify colors, fonts, padding, and other properties to customize its look.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <input type="checkbox" id="section4" class="accordion-input">
+      <label for="section4" class="accordion-label">How do I add or remove accordion sections?</label>
+      <div class="accordion-content">
+        <p> Add or remove accordion-item divs in the HTML. Each item contains a label and content section.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <input type="checkbox" id="section5" class="accordion-input">
+      <label for="section5" class="accordion-label">Is this accordion responsive to different screen sizes?</label>
+      <div class="accordion-content">
+        <p> The CSS uses percentage-based widths, which allow the accordion to scale. You may need to add media queries for finer control on smaller devices.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
