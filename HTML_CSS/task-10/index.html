@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Only Multi-Page Simulator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top navigation container -->
+    <div class="nav-container">
+      <!-- Hamburger icon shown on mobile; clicking it targets the mobile menu -->
+      <a href="#menu" class="hamburger">&#9776;</a>
+      <!-- Standard desktop nav menu -->
+      <div class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- Mobile nav overlay triggered by :target -->
+    <nav id="menu" class="mobile-nav">
+      <div class="mobile-menu">
+        <!-- Close button: clicking goes to '#' (clearing the target) -->
+        <a href="#" class="close">&times;</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="content-wrapper">
+      <section id="home" class="home">
+        <h1>Welcome Home</h1>
+        <p>This is the home page of our CSS-only website simulator.</p>
+        <p>Navigate using the menu above to explore different sections.</p>
+      </section>
+
+      <section id="about" class="page">
+        <h1>About Us</h1>
+        <p>Just a demo showcasing pure CSS capabilities.</p>
+        <div class="grid-container">
+          <div class="grid-item">
+            <h2>Our Mission</h2>
+            <p>To demonstrate pure CSS navigation.</p>
+          </div>
+          <div class="grid-item">
+            <h2>Our Vision</h2>
+            <p>A web with smooth transitions.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="page">
+        <h1>Our Services</h1>
+        <p>Here's what we offer:</p>
+        <ul>
+          <li>Responsive Design</li>
+          <li>CSS Transitions</li>
+          <li>Grid &amp; Flexbox Layouts</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="page">
+        <h1>Contact Us</h1>
+        <p>Reach out to us through various channels:</p>
+        <div class="grid-container">
+          <div class="grid-item">
+            <h2>Email</h2>
+            <p>someone@email.com</p>
+          </div>
+          <div class="grid-item">
+            <h2>Phone</h2>
+            <p>9876543210</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
