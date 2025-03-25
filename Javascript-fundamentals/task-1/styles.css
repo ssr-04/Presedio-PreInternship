@@ -1,0 +1,101 @@
+/* Common Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom right, rgb(150, 62, 147), rgb(83, 146, 155));
+    color: wheat;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+/* The input area and add button */
+.task-container {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+#task-input{
+    padding: 0.6rem;
+    border-radius: 8px;
+    width: 50%;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+/* Add button */
+#addTask {
+    padding: 0.6rem;
+    width: 4rem;
+    color: white;
+    background-color: rgba(51, 56, 56, 0.181);
+}
+
+ul {
+    margin-top: 2rem;
+}
+
+li {
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+
+.deleteButton {
+    margin-left: 1.3rem;
+    background-color: inherit;
+    font-weight: bold;
+    border: none;
+    color: red;
+    font-size: 1.5rem;
+}
+
+.completed {
+    color: rgb(71, 8, 116);
+    text-decoration: line-through;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    #task-input{
+        width: 90%;
+    }
+    li {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 320px) {
+    #task-input {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    #task-input{
+        width: 99%;
+    }
+    .task-container{
+        margin: 1rem 0;
+        padding: 0.1rem;
+    } li {
+        margin-bottom: 1rem;
+    }
+}
