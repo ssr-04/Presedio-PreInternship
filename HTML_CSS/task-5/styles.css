@@ -39,6 +39,7 @@ body {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease;
+    z-index: 2;
 }
 
 /* Modal box styles */
@@ -106,4 +107,16 @@ body {
 .checked-modal .modal {
     transform: translateY(0);
     opacity: 1;
+}
+
+/* Changes suggested by mentor -> close modal when clicked elsewhere  */
+.modal-container .modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    cursor: pointer;
 }
