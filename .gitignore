@@ -1,0 +1,66 @@
+# Node.js
+node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+.tern-project
+.cache
+.history
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+*.dump
+*.DS_Store*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build output
+dist/
+build/
+out/
+.nuxt/
+.parcel-cache/
+.cache/
+.rpt2_cache/
+.tsbuildinfo
+
+# Coverage reports
+coverage/
+lcov-report/
+
+# Dependency directories (if you use other package managers)
+jspm_packages/
+bower_components/
+
+# Optional: OS generated files
+.AppleDouble
+.LSOverride
+
+# Optional: Test output
+__snapshots__/
+
+# Optional: Specific to frameworks (e.g., React Native)
+ios/build/
+android/build/
