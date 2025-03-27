@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         thumbnail.addEventListener('click', () => {
             const fullSizeSrc = thumbnail.dataset.fullsize;
             modalImage.src = fullSizeSrc;
-            modalOverlay.idx = index;
+            modalOverlay.idx = index; // To know the current src index to move right or left
             modalOverlay.classList.add('active');
         });
     });
