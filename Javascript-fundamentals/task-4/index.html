@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather API</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <!-- Background dynamic image based on Weather -->
+        <div class="bg-overlay">
+            <img src="./assets/weather.gif" id="bg-overlay">
+        </div>
+
+        <div class="container">
+            <h1>Weather API</h1>
+            <div class="input-container">
+                <input type="text" id="city-input" maxlength="20" placeholder="Enter the city..">
+                <button id="search-btn">Search</button>
+            </div>
+            
+            <div class="results" id="results">
+                <h2 id="city-name"></h2>
+                <h3 id="weather-description"></h3>
+                <div class="grid-container">
+                    <div class="grid">
+                        <div class="card" id="card1">
+                            <!-- 
+                            <h3>Co-ordinates</h3>
+                            <p>Latitude:</p>
+                            <p>Longitude:</p>  
+                            -->
+                        </div>
+                        <div class="card" id="card2">
+                            <!--                             
+                            <h3>Temperature</h3>
+                            <p>Real temp:</p>
+                            <p>Feels like:</p>
+                            <p>Minimum:</p>
+                            <p>Maximun:</p>
+                             -->
+                        </div>
+                        <div class="card" id="card3">
+                            <!-- 
+                            <h3>Others</h3>
+                            <p>Pressure:</p>
+                            <p>Humidity:</p>
+                            <p>Wind:</p>
+                            <p>Visibility:</p> 
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js" type="module"></script>
+        <script src="./toast.js" type="module"></script>
+    </body>
+</html>
