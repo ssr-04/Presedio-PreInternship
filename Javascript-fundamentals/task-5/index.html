@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dynamic Quiz Application</title>
+        <link rel="stylesheet" href="./styles.css"/>
+    </head>
+    <body>
+        <div id="quiz-container">
+            <div id="quiz">
+                <div id="question-container" class="question"></div>
+                <div id="options-container" class="options"></div>
+            </div>
+            <div id="navigation">
+                <button id="prev-btn" class="hidden">Previous</button>
+                <button id="next-btn">Next</button>
+            </div>
+            <div id="result" class="hidden"></div>
+            <div id="feedback" class="hidden"></div>
+        </div>
+
+        <script src="./script.js" type="module"></script>
+        <script src="./data.js" type="module"></script>
+    </body>
+</html>

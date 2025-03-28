@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    line-height: 1.6;
+    background-image: url('./assets/bg.gif');
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+#quiz-container {
+    color: white;
+    width: 40%;
+    background-color: rgba(112, 107, 107, 0.599);
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #e7dfdf;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.option:hover {
+    transform: translateY(-2px);
+    background-color: #6a5f5f;
+}
+.option.selected {
+    background-color: #1a1919;
+    border-color: rgb(93, 177, 233);
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#prev-btn, #next-btn {
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#prev-btn:hover, #next-btn:hover {
+    background: black;
+    color: white;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#feedback {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    #quiz-container {
+        width: 80%; /* Increase width for better readability on smaller screens */
+        padding: 15px; 
+    }
+
+    .option {
+        padding: 8px;
+    }
+
+    #prev-btn,
+    #next-btn {
+        padding: 0.4rem; 
+    }
+}
+
+/* For mobile phones (480px and below) */
+@media (max-width: 480px) {
+    #quiz-container {
+        width: 95%; /* Make container nearly full width on very small screens */
+        padding: 10px; 
+    }
+
+    .option {
+        padding: 6px; 
+        font-size: 0.9rem; 
+    }
+
+    #navigation {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; 
+        gap: 10px; 
+    }
+}
