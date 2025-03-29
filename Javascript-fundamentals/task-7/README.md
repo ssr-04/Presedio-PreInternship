@@ -3,7 +3,7 @@
 ## 📌 **Overview**  
 This **Real-time Chat Simulation** application provides an interactive chat experience where users can send messages, and a simulated chatbot responds dynamically. The chat includes **message timestamps, a typing indicator, and proactive bot messages**, all without requiring a backend.  
 
-Demo live @ [GitHub Pages](https://ssr-04.github.io/Presedio-PreInternship/Javascript-fundamentals/task-6/index.html)
+Demo live @ [GitHub Pages](https://ssr-04.github.io/Presedio-PreInternship/Javascript-fundamentals/task-7/index.html)
 
 ---
 
