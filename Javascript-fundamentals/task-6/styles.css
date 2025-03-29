@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    margin: 0;
+    padding: 1rem; 
+    min-height: 100vh;
+    font-family: cursive, sans-serif; 
+    color: #333; 
+    background: linear-gradient(135deg, #1d1f4f, #652570); 
+}
+
+h1 {
+    font-size: 2rem;
+    color:rgb(230, 18, 107);
+}
+
+p{
+    font-size: 1.2rem;
+    color:rgb(205, 193, 198);
+    margin: 0;
+    padding: 0;
+}
+
+.list-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    touch-action: none; 
+}
+
+.draggable-list {
+    list-style: none;
+    padding: 0;
+    user-select: none; /* Prevent text selection during drag */
+}
+
+.list-item {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: #d9e3e338;
+    color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: move;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    touch-action: none; 
+}
+
+.list-item.dragging {
+    opacity: 0.5;
+    background: #323436;
+    transform: scale(0.98);
+    transition: none; 
+}
+
+.list-item.over {
+    border-top: 2px solid #2196F3;
+}
+
+.handle {
+    padding: 0 0.5rem;
+    color: #6c757d;
+}
+
+@media (hover: none) {
+    .list-item {
+        cursor: default;
+    }
+    .handle {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .list-container {
+        padding: 0.5rem;
+    }
+    .list-item {
+        font-size: 1.2rem;
+    }
+    .handle {
+        padding: 0 0.5rem;
+    }
+    
+}
