@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SPA with Hash-based Routing</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="app-title">SPA Routing Demo</h1>
+                <nav id="main-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#counter" class="nav-link">Counter</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <!-- Home page -->
+                <div id="home" class="page">
+                    <div class="card">
+                        <h2>Welcome to SPA Routing Demo</h2>
+                        <p>This is a single-page application (SPA) using hash-based routing with vanilla JavaScript.</p>
+                        <p>Try navigating between different sections using the menu above.</p>
+                        <a href="#features" class="btn">Explore Features</a>
+                    </div>
+                    <div class="card">
+                        <h2>How It Works</h2>
+                        <p>This demo uses the browser's <code>window.onhashchange</code> event to detect URL changes and dynamically loads content without page refreshes.</p>
+                        <div>
+                            <span class="badge">HTML5</span>
+                            <span class="badge">CSS3</span>
+                            <span class="badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Page -->
+                 <div id="about" class="page">
+                    <div class="card">
+                        <h2>About this Demo</h2>
+                        <p>This SPA demonstrates how to implement client-side routing using hash fragments (#) in the URL.</p>
+                        <p>Key aspects of this implementation:</p>
+                        <ul class="about-list">
+                            <li>No frameworks or libraries - just vanilla JavaScript</li>
+                            <li>State persistence across route changes</li>
+                            <li>Smooth transitions between pages</li>
+                            <li>Responsive design for all devices</li>
+                        </ul>
+                    </div>
+                 </div>
+
+                 <!-- Features Page -->
+                  <div id="features" class="page">
+                    <div class="card">
+                        <h2>Key Features</h2>
+                        <p>Explore the capabilities of this SPA routing implementation.</p>
+
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">🔄</div>
+                                <h3>No Page Reloads</h3>
+                                <p>Navigate between sections without refreshing the browser.</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">💾</div>
+                                <h3>State Persistence</h3>
+                                <p>Maintain application state across route changes.</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">📱</div>
+                                <h3>Responsive Design</h3>
+                                <p>Optimized for all screen sizes and devices.</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">🔗</div>
+                                <h3>Bookmarkable URLs</h3>
+                                <p>Each view has its own URL that can be bookmarked.</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <!-- Counter Page with Persistent state -->
+                   <div id="counter" class="page">
+                    <div class="card">
+                        <h2>State Demonstration</h2>
+                        <p>This counter maintains its value even when we navigate to other pages. Just try..</p>
+
+                        <div class="counter">
+                            <div class="counter-value" id="counter-value">
+                                0
+                            </div>
+                            <div class="counter-controls">
+                                <button class="btn" id="decrement-btn">-</button>
+                                <button class="btn" id="increment-btn">+</button>
+                            </div>
+                        </div>
+                        <p style="margin-top: 1rem;;">Navigate away and come back - the counter will remember its value.</p>
+                    </div>
+                   </div>
+
+                <!-- Contact Page -->
+                 <div id="contact" class="page">
+                    <div class="card">
+                        <h2>Contact Us</h2>
+                        <p>This is a demo contact page to demonstrate routing. No actual form submission is implemented.</p>
+                        <form id="contact-form" onsubmit="alert('Oops..it is just a dummy function')">
+                            <div class="mb">
+                                <label for="name" class="label">Name</label>
+                                <input type="text" id="name" class="input">
+                            </div>
+                            <div class="mb">
+                                <label for="email" class="label">Email</label>
+                                <input type="email" id="email" class="input">
+                            </div>
+                            <div class="mb-2">
+                                <label for="message" class="label">Message</label>
+                                <textarea id="message" rows="4" class="input"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                 </div>
+            </div>
+        </main>
+        
+    <script src="./script.js"></script>
+    </body>
+</html>
