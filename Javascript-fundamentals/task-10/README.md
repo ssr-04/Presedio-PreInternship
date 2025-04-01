@@ -4,8 +4,7 @@
 
 A comprehensive eCommerce shopping cart simulation built entirely with Vanilla JavaScript (ES6 Modules), HTML, and CSS. This project demonstrates dynamic product loading, interactive shopping cart functionality, state management with `localStorage`, dynamic price calculations (including taxes and discounts), product filtering/searching, and a modern, responsive dark-themed UI with gradient effects.
 
-<!-- Add a Live Demo link if you deploy it -->
-<!-- **[Live Demo](your-deployment-link-here)** -->
+Demo live @ [GitHub Pages](https://ssr-04.github.io/Presedio-PreInternship/Javascript-fundamentals/task-10/index.html)
 
 ## Objective
 
