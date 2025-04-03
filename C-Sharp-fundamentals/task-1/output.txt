@@ -1,0 +1,15 @@
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run Program.cs
+Enter a positive number: two
+Invalid input! Please enter a non-negative integer.
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run Program.cs
+Enter a positive number: -5
+Invalid input! Please enter a non-negative integer.
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run Program.cs
+Enter a positive number: 0
+Factorial of 0 is 1
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run Program.cs
+Enter a positive number: 5
+Factorial of 5 is 120
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run Program.cs
+Enter a positive number: 20
+Factorial of 20 is 2432902008176640000
