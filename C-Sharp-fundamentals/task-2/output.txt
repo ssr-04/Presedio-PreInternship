@@ -1,0 +1,4 @@
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run
+Hello, my name is Ram, I am 25 years old
+Hello, my name is Som, I am 30 years old
+Hello, my name is Jack, I am 22 years old
