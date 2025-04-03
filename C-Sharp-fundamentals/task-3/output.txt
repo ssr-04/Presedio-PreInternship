@@ -1,0 +1,122 @@
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run
+
+Options
+1. Add Item
+2. Remove Item
+3. Display Items
+4. Exit
+Choose an option: 3
+The list is empty.
+
+Options
+1. Add Item
+2. Remove Item
+3. Display Items
+4. Exit
+Choose an option: 1
+Enter Item to add: sugar
+Added: SUGAR
+
+Options
+1. Add Item
+2. Remove Item
+3. Display Items
+4. Exit
+Choose an option: 3
+1. SUGAR
+
+Options
+1. Add Item
+2. Remove Item
+3. Display Items
+4. Exit
+Choose an option: 2
+Enter item name to remove: tea
+Item not found.
+
+Options
+1. Add Item
+2. Remove Item
+3. Display Items
+4. Exit
+Choose an option: 1
+Enter Item to add: tea
+Added: TEA
+
+Options
+1. Add Item
+2. Remove Item
+3. Display Items
+4. Exit
+Choose an option: 3
+1. SUGAR
+2. TEA
+
+Options
+1. Add Item
+2. Remove Item
+3. Display Items
+4. Exit
+Choose an option: 2
+Enter item name to remove: 2
+Item not found.
+
+Options
+1. Add Item
+2. Remove Item
+3. Display Items
+4. Exit
+Choose an option: 2
+Enter item name to remove: tea
+Removed: TEA
+
+Options
+1. Add Item
+2. Remove Item
+3. Display Items
+4. Exit
+Choose an option: 3
+1. SUGAR
+
+Options
+1. Add Item
+2. Remove Item
+3. Display Items
+4. Exit
+Choose an option: 1
+Enter Item to add: apple
+Added: APPLE
+
+Options
+1. Add Item
+2. Remove Item
+3. Display Items
+4. Exit
+Choose an option: 3
+1. SUGAR
+2. APPLE
+
+Options
+1. Add Item
+2. Remove Item
+3. Display Items
+4. Exit
+Choose an option: 2
+Enter item name to remove: sugar
+Removed: SUGAR
+
+Options
+1. Add Item
+2. Remove Item
+3. Display Items
+4. Exit
+Choose an option: 3
+1. APPLE
+
+Options
+1. Add Item
+2. Remove Item
+3. Display Items
+4. Exit
+Choose an option: 4
+Exiting program...
