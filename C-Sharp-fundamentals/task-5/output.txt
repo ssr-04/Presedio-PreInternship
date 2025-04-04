@@ -1,0 +1,9 @@
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run
+📄 File Analysis Report
+------------------------
+Lines     : 14
+Words     : 114
+Characters: 620
+Frequent words: [and -> 5 times] [Thou -> 4 times] [Shall -> 3 times] [to -> 3 times] [of -> 3 times] 
+
+✅ Analysis written to: ./output.txt

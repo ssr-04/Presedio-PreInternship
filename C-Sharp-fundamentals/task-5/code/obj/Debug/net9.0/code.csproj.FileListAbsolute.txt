@@ -1,0 +1,15 @@
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/bin/Debug/net9.0/code
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/bin/Debug/net9.0/code.deps.json
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/bin/Debug/net9.0/code.runtimeconfig.json
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/bin/Debug/net9.0/code.dll
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/bin/Debug/net9.0/code.pdb
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/obj/Debug/net9.0/code.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/obj/Debug/net9.0/code.AssemblyInfoInputs.cache
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/obj/Debug/net9.0/code.AssemblyInfo.cs
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/obj/Debug/net9.0/code.csproj.CoreCompileInputs.cache
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/obj/Debug/net9.0/code.sourcelink.json
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/obj/Debug/net9.0/code.dll
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/obj/Debug/net9.0/refint/code.dll
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/obj/Debug/net9.0/code.pdb
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/obj/Debug/net9.0/code.genruntimeconfig.cache
+/Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/C-Sharp-fundamentals/task-5/code/obj/Debug/net9.0/ref/code.dll
