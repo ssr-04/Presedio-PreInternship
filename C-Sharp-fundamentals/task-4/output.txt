@@ -1,0 +1,9 @@
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run
+
+📚 Students with Grade > 70 (sorted by Grade):
+
+Name: Anita      Grade: 92.3     Age: 21
+Name: Dev        Grade: 88.5     Age: 20
+Name: Ram        Grade: 88.5     Age: 20
+Name: Karan      Grade: 76       Age: 19
+Name: Sneha      Grade: 73.5     Age: 21
