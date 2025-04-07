@@ -1,0 +1,18 @@
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run
+[ADD] Product with ID 101 added.
+[ADD] Product with ID 102 added.
+[ADD] Product with ID 103 added.
+
+📦 All Products:
+ID: 101, Name: Laptop, Price: ₹60000
+ID: 102, Name: Mouse, Price: ₹500
+ID: 103, Name: Keyboard, Price: ₹1200
+
+[UPDATE] Product with ID 102 updated.
+[DELETE] Product with ID 103 deleted.
+
+📦 Updated Product List:
+ID: 101, Name: Laptop, Price: ₹60000
+ID: 102, Name: Wireless Mouse, Price: ₹700
+
+🔍 Get Product with ID 101: ID: 101, Name: Laptop, Price: ₹60000
