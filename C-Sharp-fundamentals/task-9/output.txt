@@ -1,0 +1,15 @@
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run
+🛠️ Developer Automation Task Runner
+
+🔍 Scanning for [Runnable] tasks...
+
+▶️ Running: GenerateReport — Performs the system tests.
+📄 All tests passed.
+
+▶️ Running: PerformHealthCheck — Performs the system health check.
+💻 Health Check: Nominal (CPU 34%, Memory 65%, Disk 70%).
+
+▶️ Running: SendSummaryMail — Sends summary email to the team.
+📧 Summary Email sent to admin@company.com.
+
+✅ All runnable tasks executed.
