@@ -1,0 +1,21 @@
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run
+Starting Counter...
+
+Counter: 1
+Counter: 2
+Counter: 3
+Counter: 4
+Counter: 5
+
+[Publisher] Threshold 5 reached. Raising event...📢
+
+[Subscriber] 🔔 Alert: Counter threshold reached!
+[Subscriber] 📝 Log: Threshold event handled and logged.
+
+Counter: 6
+Counter: 7
+Counter: 8
+Counter: 9
+Counter: 10
+
+✅Program Ended.
