@@ -1,0 +1,33 @@
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run
+🔄 Fetching your personalized feed. Please wait...
+
+
+📬 Personalized Feed:
+
+🌤️ Weather: Sunny, 36°C in Coimbatore.
+📈 Stock: FB ₹308.75 ↑16.80%
+📰 News: AI revolutionizes healthcare diagnostics.
+
+✅ Done.
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run
+🔄 Fetching your personalized feed. Please wait...
+
+
+📬 Personalized Feed:
+
+⚠️ Weather API: Something went wrong.
+⚠️ Stock API: Something went wrong.
+📰 News: AI revolutionizes healthcare diagnostics.
+
+✅ Done.
+(base) sachinsabariram@Sachins-MacBook-Air code % dotnet run
+🔄 Fetching your personalized feed. Please wait...
+
+
+📬 Personalized Feed:
+
+🌤️ Weather: Sunny, 37°C in Coimbatore.
+⚠️ Stock API: Something went wrong.
+📰 News: AI revolutionizes healthcare diagnostics.
+
+✅ Done.
