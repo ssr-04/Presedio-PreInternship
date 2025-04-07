@@ -49,7 +49,6 @@ const addToCart = (product) => {
     }
 
     const existingItemIndex = cart.findIndex(item => item.id === product.id);
-
     if(existingItemIndex > -1) {
         // Not -1, if exists
         cart[existingItemIndex].quantity += 1;
@@ -62,9 +61,9 @@ const addToCart = (product) => {
             image: product.image,
             quantity: 1
         })
-        saveCart();
-        return true;
     }
+    saveCart();
+    return true;
 }
 
 /**

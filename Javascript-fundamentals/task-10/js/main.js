@@ -50,12 +50,13 @@ function handleAddToCart(productId) {
         if (Cart.add(productToAdd)) {
             console.log(`Added product ${productId} to cart.`);
             UI.updateCartIcon(Cart.getItemCount());
-            //  Refresh cart modal if it's open
+            // Optionally refresh cart modal if it's open
             if (document.getElementById('cart-modal').style.display === 'block') {
                 UI.displayCartItems();
             }
         } else {
              console.warn(`Failed to add product ${productId} to cart.`);
+             // Optionally show a user message
         }
     } else {
         console.error(`Product with ID ${productId} not found.`);

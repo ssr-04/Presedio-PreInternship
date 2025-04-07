@@ -101,7 +101,7 @@ const updateAddToCartButton = (productId, added) => {
                     button.classList.remove('added');
                     button.disabled = false;
                 }
-            }, 2000); //Resets after 2 seconds
+            }, 1500); //Resets after 1.5 seconds
         } else {
             button.innerHTML = '<i class="fas fa-cart-plus"></i> Add to Cart';
             button.classList.remove('added');
