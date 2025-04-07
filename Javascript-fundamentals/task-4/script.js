@@ -126,20 +126,20 @@ const displayResults = (data) => {
 
         // Card details
         const card1Content = [
-            {parameter: 'Latitude', value: lat},
-            {parameter: 'Longitude', value: lon}
+            {parameter: 'Latitude', value: lat + "'"},
+            {parameter: 'Longitude', value: lon + "'"}
         ]
         const card2Content = [
-            {parameter: 'Real temp', value: temp},
-            {parameter: 'Feels like', value: feels_like},
-            {parameter: 'Minimum', value: temp_min},
-            {parameter: 'Maximum', value: temp_max},
+            {parameter: 'Real temp', value: temp + "°c"},
+            {parameter: 'Feels like', value: feels_like + "°c"},
+            {parameter: 'Minimum', value: temp_min + "°c"},
+            {parameter: 'Maximum', value: temp_max + "°c"},
         ]
         const card3Content = [
-            {parameter: 'Pressure', value: pressure},
-            {parameter: 'Humidity', value: humidity},
-            {parameter: 'Wind', value: speed},
-            {parameter: 'Visibility', value: visibility},
+            {parameter: 'Pressure', value: pressure + " pa"},
+            {parameter: 'Humidity', value: humidity + "%"},
+            {parameter: 'Wind', value: speed + " km/h"},
+            {parameter: 'Visibility', value: visibility + " m"},
         ]
         const details = [
             {card:card1, title:'Co-ordinates', content:card1Content},
