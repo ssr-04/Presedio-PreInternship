@@ -1,0 +1,85 @@
+mysql> source /Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/SQL/task-4/query.sql
+
++---------+-----------+------------+------------+----------------------------------+----------+------------+
+| OrderID | FirstName | LastName   | House      | Item                             | Quantity | OrderDate  |
++---------+-----------+------------+------------+----------------------------------+----------+------------+
+|       1 | Harry     | Potter     | Gryffindor | Invisibility Cloak               |        1 | 2025-03-01 |
+|       2 | Harry     | Potter     | Gryffindor | Marauder's Map                   |        1 | 2025-03-02 |
+|       3 | Hermione  | Granger    | Gryffindor | Time Turner                      |        2 | 2025-03-04 |
+|      11 | Hermione  | Granger    | Gryffindor | Bertie Bott's Every Flavor Beans |        7 | 2025-03-12 |
+|       4 | Ron       | Weasley    | Gryffindor | Chocolate Frogs                  |        5 | 2025-03-05 |
+|      10 | Ron       | Weasley    | Gryffindor | Extendable Ears                  |       10 | 2025-03-11 |
+|       5 | Draco     | Malfoy     | Slytherin  | Dark Mark Amulet                 |        1 | 2025-03-06 |
+|       6 | Luna      | Lovegood   | Ravenclaw  | Spectrespecs                     |        3 | 2025-03-07 |
+|       7 | Neville   | Longbottom | Gryffindor | Herbology Kit                    |        2 | 2025-03-08 |
+|       8 | Severus   | Snape      | Slytherin  | Potions Manual                   |        1 | 2025-03-09 |
+|       9 | Tom       | Riddle     | Slytherin  | Diary of Tom Riddle              |        1 | 2025-03-10 |
++---------+-----------+------------+------------+----------------------------------+----------+------------+
+11 rows in set (0.00 sec)
+
++----------+-----------+------------+----------------------------------+----------+------------+
+| WizardID | FirstName | LastName   | Item                             | Quantity | OrderDate  |
++----------+-----------+------------+----------------------------------+----------+------------+
+|        1 | Harry     | Potter     | Invisibility Cloak               |        1 | 2025-03-01 |
+|        1 | Harry     | Potter     | Marauder's Map                   |        1 | 2025-03-02 |
+|        2 | Hermione  | Granger    | Time Turner                      |        2 | 2025-03-04 |
+|        2 | Hermione  | Granger    | Bertie Bott's Every Flavor Beans |        7 | 2025-03-12 |
+|        3 | Ron       | Weasley    | Chocolate Frogs                  |        5 | 2025-03-05 |
+|        3 | Ron       | Weasley    | Extendable Ears                  |       10 | 2025-03-11 |
+|        4 | Draco     | Malfoy     | Dark Mark Amulet                 |        1 | 2025-03-06 |
+|        5 | Luna      | Lovegood   | Spectrespecs                     |        3 | 2025-03-07 |
+|        6 | Neville   | Longbottom | Herbology Kit                    |        2 | 2025-03-08 |
+|        7 | Severus   | Snape      | Potions Manual                   |        1 | 2025-03-09 |
+|        8 | Cedric    | Diggory    | NULL                             |     NULL | NULL       |
+|        9 | Tom       | Riddle     | Diary of Tom Riddle              |        1 | 2025-03-10 |
++----------+-----------+------------+----------------------------------+----------+------------+
+12 rows in set (0.00 sec)
+
++----------+-----------+----------+------------+
+| WizardID | FirstName | LastName | House      |
++----------+-----------+----------+------------+
+|        8 | Cedric    | Diggory  | Hufflepuff |
++----------+-----------+----------+------------+
+1 row in set (0.00 sec)
+
++-----------+------------+--------------+-------------------+
+| FirstName | LastName   | OrdersPlaced | TotalItemsOrdered |
++-----------+------------+--------------+-------------------+
+| Ron       | Weasley    |            2 |                15 |
+| Hermione  | Granger    |            2 |                 9 |
+| Luna      | Lovegood   |            1 |                 3 |
+| Harry     | Potter     |            2 |                 2 |
+| Neville   | Longbottom |            1 |                 2 |
+| Draco     | Malfoy     |            1 |                 1 |
+| Severus   | Snape      |            1 |                 1 |
+| Tom       | Riddle     |            1 |                 1 |
++-----------+------------+--------------+-------------------+
+8 rows in set (0.00 sec)
+
++-----------+------------+-------------------+
+| FirstName | LastName   | TotalItemsOrdered |
++-----------+------------+-------------------+
+| Harry     | Potter     |                 2 |
+| Hermione  | Granger    |                 9 |
+| Neville   | Longbottom |                 2 |
+| Ron       | Weasley    |                15 |
++-----------+------------+-------------------+
+4 rows in set (0.00 sec)
+
++------------+------------+-------------------+
+| House      | NoOfOrders | TotalItemsOrdered |
++------------+------------+-------------------+
+| Gryffindor |          7 |                28 |
+| Ravenclaw  |          1 |                 3 |
+| Slytherin  |          3 |                 3 |
++------------+------------+-------------------+
+3 rows in set (0.00 sec)
+
++-------------+-------------------+
+| BloodStatus | TotalItemsOrdered |
++-------------+-------------------+
+| Pure-blood  |                21 |
+| Muggle-born |                 9 |
+| Half-blood  |                 4 |
++-------------+-------------------+
+3 rows in set (0.00 sec)
