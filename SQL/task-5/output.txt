@@ -1,0 +1,48 @@
+mysql> source /Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/SQL/task-5/query.sql
+
++-----------+----------+
+| FirstName | LastName |
++-----------+----------+
+| Harry     | Potter   |
+| Hermione  | Granger  |
+| Ron       | Weasley  |
++-----------+----------+
+3 rows in set (0.00 sec)
+
++----------+-----------+------------+-------------------+
+| WizardID | FirstName | LastName   | TotalItemsOrdered |
++----------+-----------+------------+-------------------+
+|        8 | Cedric    | Diggory    |                 0 |
+|        4 | Draco     | Malfoy     |                 1 |
+|        7 | Severus   | Snape      |                 1 |
+|        9 | Tom       | Riddle     |                 1 |
+|        1 | Harry     | Potter     |                 2 |
+|        6 | Neville   | Longbottom |                 2 |
+|        5 | Luna      | Lovegood   |                 3 |
+|        2 | Hermione  | Granger    |                 9 |
+|        3 | Ron       | Weasley    |                15 |
++----------+-----------+------------+-------------------+
+9 rows in set (0.00 sec)
+
++----------+-----------+----------+
+| WizardID | FirstName | LastName |
++----------+-----------+----------+
+|        2 | Hermione  | Granger  |
+|        3 | Ron       | Weasley  |
++----------+-----------+----------+
+2 rows in set (0.00 sec)
+
++-----------+----------+------------+-------------+
+| FirstName | LastName | House      | BloodStatus |
++-----------+----------+------------+-------------+
+| Harry     | Potter   | Gryffindor | Half-blood  |
+| Draco     | Malfoy   | Slytherin  | Pure-blood  |
++-----------+----------+------------+-------------+
+2 rows in set (0.00 sec)
+
++------------+---------------+
+| House      | TotalQuantity |
++------------+---------------+
+| Gryffindor |            28 |
++------------+---------------+
+1 row in set (0.00 sec)
