@@ -1,4 +1,4 @@
--- Task 3: Simple Aggregation and Grouping
+-- Task 4: Multi-Table JOINS
 -- Author : Sachin Sabariram
 -- Date: 8th Apr, 2025
 
