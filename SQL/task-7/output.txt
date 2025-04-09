@@ -1,0 +1,382 @@
+(base) sachinsabariram@Sachins-MacBook-Air task-7 % python script.py
+Successfully loaded data from ./employee_data.csv into task7_db.Employees
+
+mysql> source /Users/sachinsabariram/Desktop/Presedio/Presedio-PreInternship/SQL/task-7/query.sql
+
++------------+-----------+----------+------------+------------+-------------------+----------------+-----------------------------+--------------+----------------+--------------+---------+----------------------------+-----------------+-------------------------------+----------------------+---------------------+------------+-------+-------------+--------+----------+---------------+---------------+------------------+-----------------------+
+| EmployeeID | FirstName | LastName | StartDate  | ExitDate   | Title             | Supervisor     | Email                       | BusinessUnit | EmployeeStatus | EmployeeType | PayZone | EmployeeClassificationType | TerminationType | TerminationDescription        | DepartmentType       | DivisionDescription | DOB        | State | JobFunction | Gender | Location | RaceEthnicity | MaritalStatus | PerformanceScore | CurrentEmployeeRating |
++------------+-----------+----------+------------+------------+-------------------+----------------+-----------------------------+--------------+----------------+--------------+---------+----------------------------+-----------------+-------------------------------+----------------------+---------------------+------------+-------+-------------+--------+----------+---------------+---------------+------------------+-----------------------+
+|       1001 | Susan     | Exantus  | 2019-08-29 | NULL       | Software Engineer | Angela Carlson | susan.exantus@bilearner.com | BPC          | Active         | Part-Time    | Zone A  | Part-Time                  | Unk             | NULL                          | Software Engineering | Engineers           | 1957-09-21 | MA    | Engineer    | Female | 1749     | Black         | Married       | Fully Meets      | 3                     |
+|       1002 | Sandra    | Martin   | 2022-12-12 | 2023-05-28 | Software Engineer | Angela Hayes   | sandra.martin@bilearner.com | NEL          | Active         | Part-Time    | Zone A  | Temporary                  | Involuntary     | Behind buy our of very claim. | Software Engineering | Catv                | 1950-07-08 | MA    | Foreman     | Female | 2135     | Asian         | Widowed       | Fully Meets      | 3                     |
++------------+-----------+----------+------------+------------+-------------------+----------------+-----------------------------+--------------+----------------+--------------+---------+----------------------------+-----------------+-------------------------------+----------------------+---------------------+------------+-------+-------------+--------+----------+---------------+---------------+------------------+-----------------------+
+2 rows in set (0.00 sec)
+
++------------+------------+-------------+--------------+-----------------------+------------+
+| EmployeeID | FirstName  | LastName    | BusinessUnit | CurrentEmployeeRating | RatingRank |
++------------+------------+-------------+--------------+-----------------------+------------+
+|       3794 | Ayden      | Chambers    | BPC          | 5                     |          1 |
+|       3051 | Briley     | Huerta      | BPC          | 5                     |          1 |
+|       3162 | Camryn     | Clark       | BPC          | 5                     |          1 |
+|       2470 | Cesar      | Hunter      | BPC          | 5                     |          1 |
+|       3539 | Chaz       | Bruce       | BPC          | 5                     |          1 |
+|       2858 | Colin      | Simpson     | BPC          | 5                     |          1 |
+|       2439 | Cordell    | Vazquez     | BPC          | 5                     |          1 |
+|       3164 | Danielle   | Blanchard   | BPC          | 5                     |          1 |
+|       3561 | Dianna     | Blount      | BPC          | 5                     |          1 |
+|       2749 | Elizabeth  | Meads       | BPC          | 5                     |          1 |
+|       3633 | Emma       | Ware        | BPC          | 5                     |          1 |
+|       2538 | Isaias     | Pineda      | BPC          | 5                     |          1 |
+|       2589 | Jabari     | Frank       | BPC          | 5                     |          1 |
+|       2310 | Jade       | Sloan       | BPC          | 5                     |          1 |
+|       3350 | Jalen      | Richmond    | BPC          | 5                     |          1 |
+|       3129 | Jayda      | Chapman     | BPC          | 5                     |          1 |
+|       3279 | Jonas      | Everett     | BPC          | 5                     |          1 |
+|       3436 | Joseph     | Martins     | BPC          | 5                     |          1 |
+|       3601 | Keagan     | Henson      | BPC          | 5                     |          1 |
+|       2684 | Kendrick   | Pollard     | BPC          | 5                     |          1 |
+|       2832 | Lilyana    | Huffman     | BPC          | 5                     |          1 |
+|       3039 | Marquis    | Johns       | BPC          | 5                     |          1 |
+|       2523 | Maximilian | Williamson  | BPC          | 5                     |          1 |
+|       2922 | Miles      | Roberts     | BPC          | 5                     |          1 |
+|       2746 | Misael     | Pratt       | BPC          | 5                     |          1 |
+|       2846 | Natalia    | Bush        | BPC          | 5                     |          1 |
+|       2098 | Phillip    | Fuentes     | BPC          | 5                     |          1 |
+|       3174 | Roy        | Pratt       | BPC          | 5                     |          1 |
+|       2122 | Tia        | Kent        | BPC          | 5                     |          1 |
+|       2771 | Tia        | Potter      | BPC          | 5                     |          1 |
+|       2181 | Trevin     | Lambert     | BPC          | 5                     |          1 |
+|       2285 | Webster L  | Butler      | BPC          | 5                     |          1 |
+|       2109 | Zain       | Tanner      | BPC          | 5                     |          1 |
+|       2736 | Zara       | Werner      | BPC          | 5                     |          1 |
+|       2507 | Adalyn     | Hess        | CCDR         | 5                     |          1 |
+|       3704 | Addisyn    | Aguilar     | CCDR         | 5                     |          1 |
+|       3508 | Aidan      | Harding     | CCDR         | 5                     |          1 |
+|       3152 | Alaina     | Mayo        | CCDR         | 5                     |          1 |
+|       3223 | Alisa      | Aguirre     | CCDR         | 5                     |          1 |
+|       2277 | Amy        | Dunn        | CCDR         | 5                     |          1 |
+|       3040 | Areli      | Torres      | CCDR         | 5                     |          1 |
+|       2206 | Audrina    | Williams    | CCDR         | 5                     |          1 |
+|       2701 | Branden    | Ali         | CCDR         | 5                     |          1 |
+|       2137 | Carlos     | Murphy      | CCDR         | 5                     |          1 |
+|       3052 | Ean        | Barajas     | CCDR         | 5                     |          1 |
+|       2196 | Ellie      | Ortega      | CCDR         | 5                     |          1 |
+|       2427 | Emilee     | Thompson    | CCDR         | 5                     |          1 |
+|       3602 | Helena     | Davenport   | CCDR         | 5                     |          1 |
+|       3368 | Karli      | Parks       | CCDR         | 5                     |          1 |
+|       2675 | Kayden     | Fernandez   | CCDR         | 5                     |          1 |
+|       3130 | Kennedy    | Beard       | CCDR         | 5                     |          1 |
+|       3280 | Makaila    | Pham        | CCDR         | 5                     |          1 |
+|       3063 | Patience   | Henry       | CCDR         | 5                     |          1 |
+|       3003 | Paul       | Greer       | CCDR         | 5                     |          1 |
+|       2703 | Saul       | Shaw        | CCDR         | 5                     |          1 |
+|       2849 | Shannon    | Hurst       | CCDR         | 5                     |          1 |
+|       2590 | Stephanie  | Wilkinson   | CCDR         | 5                     |          1 |
+|       2567 | Sylvia     | Price       | CCDR         | 5                     |          1 |
+|       2189 | Tyree      | Mahoney     | CCDR         | 5                     |          1 |
+|       2308 | Asia       | Rivers      | EW           | 5                     |          1 |
+|       2213 | Branden    | Khan        | EW           | 5                     |          1 |
+|       2454 | Callum     | Mccormick   | EW           | 5                     |          1 |
+|       3607 | Frankie    | Atkins      | EW           | 5                     |          1 |
+|       3449 | Gerald     | Preston     | EW           | 5                     |          1 |
+|       2919 | Ismael     | Bowers      | EW           | 5                     |          1 |
+|       2266 | Jameson    | Eaton       | EW           | 5                     |          1 |
+|       3413 | Jovanny    | Matthews    | EW           | 5                     |          1 |
+|       2643 | Katelyn    | Brown       | EW           | 5                     |          1 |
+|       2630 | Kiley      | Wagner      | EW           | 5                     |          1 |
+|       2924 | Kole       | Garrison    | EW           | 5                     |          1 |
+|       2940 | Larissa    | Taylor      | EW           | 5                     |          1 |
+|       2835 | Liberty    | Poole       | EW           | 5                     |          1 |
+|       2774 | Macy       | Nielsen     | EW           | 5                     |          1 |
+|       2119 | Marcos     | Carey       | EW           | 5                     |          1 |
+|       2364 | Milagros   | Jimenez     | EW           | 5                     |          1 |
+|       2191 | Paul       | Moreno      | EW           | 5                     |          1 |
+|       2227 | Raymond    | Maldonado   | EW           | 5                     |          1 |
+|       2824 | Talan      | Garrett     | EW           | 5                     |          1 |
+|       2467 | Talia      | Barrett     | EW           | 5                     |          1 |
+|       3298 | Tatum      | Petty       | EW           | 5                     |          1 |
+|       3004 | Tiara      | Velez       | EW           | 5                     |          1 |
+|       2461 | Tucker     | Haas        | EW           | 5                     |          1 |
+|       3027 | Alan       | Woods       | MSC          | 5                     |          1 |
+|       2516 | Ally       | Brennan     | MSC          | 5                     |          1 |
+|       3133 | Aydin      | Dixon       | MSC          | 5                     |          1 |
+|       2920 | Caden      | Silva       | MSC          | 5                     |          1 |
+|       2420 | Carleigh   | Garrison    | MSC          | 5                     |          1 |
+|       3184 | Dakota     | Oliver      | MSC          | 5                     |          1 |
+|       2801 | Devon      | Shannon     | MSC          | 5                     |          1 |
+|       3575 | George     | Johnson     | MSC          | 5                     |          1 |
+|       2408 | Gunner     | Boone       | MSC          | 5                     |          1 |
+|       3485 | Jaiden     | Johnson     | MSC          | 5                     |          1 |
+|       3216 | Janine     | Purinton    | MSC          | 5                     |          1 |
+|       2928 | Jayden     | Bolton      | MSC          | 5                     |          1 |
+|       2899 | Johnathan  | Huerta      | MSC          | 5                     |          1 |
+|       2468 | Kailyn     | Torres      | MSC          | 5                     |          1 |
+|       3712 | Kyra       | Ray         | MSC          | 5                     |          1 |
+|       3056 | Lyric      | Butler      | MSC          | 5                     |          1 |
+|       3248 | Micah      | Douglas     | MSC          | 5                     |          1 |
+|       2578 | Michelle   | Carter      | MSC          | 5                     |          1 |
+|       2644 | Miranda    | Keith       | MSC          | 5                     |          1 |
+|       3090 | Morgan     | Roth        | MSC          | 5                     |          1 |
+|       2103 | Nola       | Sellers     | MSC          | 5                     |          1 |
+|       3732 | Orion      | Ochoa       | MSC          | 5                     |          1 |
+|       3156 | Pierce     | Charles     | MSC          | 5                     |          1 |
+|       2678 | Presley    | Dodson      | MSC          | 5                     |          1 |
+|       2816 | Ricardo    | Mcdonald    | MSC          | 5                     |          1 |
+|       2970 | Shenice    | Gold        | MSC          | 5                     |          1 |
+|       3630 | Stephanie  | Briggs      | MSC          | 5                     |          1 |
+|       3363 | Trevor     | Barry       | MSC          | 5                     |          1 |
+|       2322 | Ariel      | Cervantes   | NEL          | 5                     |          1 |
+|       3119 | Dana       | Stevenson   | NEL          | 5                     |          1 |
+|       2401 | Darien     | Young       | NEL          | 5                     |          1 |
+|       2446 | Devan      | Hall        | NEL          | 5                     |          1 |
+|       2489 | Graham     | Villa       | NEL          | 5                     |          1 |
+|       3116 | Johnathan  | Harmon      | NEL          | 5                     |          1 |
+|       2232 | Jovan      | Giles       | NEL          | 5                     |          1 |
+|       2288 | Kelley     | Spirea      | NEL          | 5                     |          1 |
+|       3236 | Landin     | Walton      | NEL          | 5                     |          1 |
+|       3491 | Lennon     | Buchanan    | NEL          | 5                     |          1 |
+|       2751 | Mathew     | Linden      | NEL          | 5                     |          1 |
+|       2456 | Odin       | Sampson     | NEL          | 5                     |          1 |
+|       2935 | Pablo      | Yates       | NEL          | 5                     |          1 |
+|       2303 | Penelope   | Jordan      | NEL          | 5                     |          1 |
+|       2903 | Presley    | Padilla     | NEL          | 5                     |          1 |
+|       2613 | Raquel     | Sosa        | NEL          | 5                     |          1 |
+|       3629 | Reginald   | Lowery      | NEL          | 5                     |          1 |
+|       2393 | Rhett      | Holmes      | NEL          | 5                     |          1 |
+|       2587 | Rylee      | Frye        | NEL          | 5                     |          1 |
+|       3406 | Serenity   | Montgomery  | NEL          | 5                     |          1 |
+|       3744 | Skyler     | Blankenship | NEL          | 5                     |          1 |
+|       2871 | Tania      | Taylor      | NEL          | 5                     |          1 |
+|       3277 | Wade       | Beltran     | NEL          | 5                     |          1 |
+|       3075 | Adam       | Meza        | PL           | 5                     |          1 |
+|       3264 | Alani      | Phillips    | PL           | 5                     |          1 |
+|       2503 | Ally       | Goodman     | PL           | 5                     |          1 |
+|       3339 | Alyson     | Hickman     | PL           | 5                     |          1 |
+|       2187 | Amaris     | Kirk        | PL           | 5                     |          1 |
+|       2614 | Andy       | Stewart     | PL           | 5                     |          1 |
+|       3017 | Arjun      | Gibson      | PL           | 5                     |          1 |
+|       2323 | Aubree     | Villanueva  | PL           | 5                     |          1 |
+|       3096 | Baron      | Lindsey     | PL           | 5                     |          1 |
+|       2588 | Callum     | Ford        | PL           | 5                     |          1 |
+|       2699 | Cannon     | Gray        | PL           | 5                     |          1 |
+|       3513 | Damaris    | Cisneros    | PL           | 5                     |          1 |
+|       3209 | Daniel     | Davis       | PL           | 5                     |          1 |
+|       2841 | Darien     | Doyle       | PL           | 5                     |          1 |
+|       3355 | Darryl     | Ponce       | PL           | 5                     |          1 |
+|       3295 | Emmanuel   | Perkins     | PL           | 5                     |          1 |
+|       3140 | Evie       | Beard       | PL           | 5                     |          1 |
+|       2745 | Harley     | Greer       | PL           | 5                     |          1 |
+|       2438 | Humberto   | Rocha       | PL           | 5                     |          1 |
+|       2552 | Jalen      | Jennings    | PL           | 5                     |          1 |
+|       2148 | Joel       | Koch        | PL           | 5                     |          1 |
+|       3376 | Maren      | Anderson    | PL           | 5                     |          1 |
+|       2367 | Mariam     | Doyle       | PL           | 5                     |          1 |
+|       2384 | Matthias   | Dunlap      | PL           | 5                     |          1 |
+|       2853 | Nathanial  | Davis       | PL           | 5                     |          1 |
+|       2770 | Neveah     | Bird        | PL           | 5                     |          1 |
+|       2803 | Rebecca    | Francis     | PL           | 5                     |          1 |
+|       2604 | Saniyah    | Cantu       | PL           | 5                     |          1 |
+|       2549 | Tristan    | Reed        | PL           | 5                     |          1 |
+|       3320 | Zachery    | Moreno      | PL           | 5                     |          1 |
+|       2633 | Zain       | Nolan       | PL           | 5                     |          1 |
+|       2180 | Zariah     | Castaneda   | PL           | 5                     |          1 |
+|       3068 | Alana      | Nunez       | PYZ          | 5                     |          1 |
+|       2906 | Anabel     | Hanna       | PYZ          | 5                     |          1 |
+|       3147 | Bobby      | Levy        | PYZ          | 5                     |          1 |
+|       2478 | Braden     | Nicholson   | PYZ          | 5                     |          1 |
+|       2888 | Celia      | Mcpherson   | PYZ          | 5                     |          1 |
+|       2149 | Cheyanne   | Hess        | PYZ          | 5                     |          1 |
+|       2663 | Eli        | Grant       | PYZ          | 5                     |          1 |
+|       2794 | Emely      | Parks       | PYZ          | 5                     |          1 |
+|       3047 | Francesca  | Lowe        | PYZ          | 5                     |          1 |
+|       2583 | Gerry      | Friedman    | PYZ          | 5                     |          1 |
+|       2838 | Gloria     | Marks       | PYZ          | 5                     |          1 |
+|       2636 | Gwendolyn  | Hogan       | PYZ          | 5                     |          1 |
+|       2777 | Hector     | Escobar     | PYZ          | 5                     |          1 |
+|       3493 | Hugo       | Clay        | PYZ          | 5                     |          1 |
+|       3709 | Jacey      | Reyes       | PYZ          | 5                     |          1 |
+|       3464 | James      | Duke        | PYZ          | 5                     |          1 |
+|       3634 | Keyon      | Haley       | PYZ          | 5                     |          1 |
+|       3207 | Lynn       | O'hare      | PYZ          | 5                     |          1 |
+|       2159 | Matias     | Burns       | PYZ          | 5                     |          1 |
+|       3212 | Mohammed   | Latif       | PYZ          | 5                     |          1 |
+|       3076 | Omari      | Keller      | PYZ          | 5                     |          1 |
+|       2209 | Rick       | Clayton     | PYZ          | 5                     |          1 |
+|       2984 | Tayana     | Jeannite    | PYZ          | 5                     |          1 |
+|       2727 | Uriah      | Briggs      | PYZ          | 5                     |          1 |
+|       3591 | Abdullah   | Ellison     | SVG          | 5                     |          1 |
+|       2183 | Bria       | Bush        | SVG          | 5                     |          1 |
+|       2111 | Carmelo    | Hayden      | SVG          | 5                     |          1 |
+|       3100 | Carsen     | Schmidt     | SVG          | 5                     |          1 |
+|       3256 | Coleman    | Huffman     | SVG          | 5                     |          1 |
+|       3122 | Connor     | Bray        | SVG          | 5                     |          1 |
+|       2118 | Dale       | Mendoza     | SVG          | 5                     |          1 |
+|       2239 | Dario      | Whitney     | SVG          | 5                     |          1 |
+|       3516 | Deborah    | Love        | SVG          | 5                     |          1 |
+|       2295 | Everett    | Jordan      | SVG          | 5                     |          1 |
+|       3281 | Gloria     | Rose        | SVG          | 5                     |          1 |
+|       2219 | Hazel      | Lane        | SVG          | 5                     |          1 |
+|       3088 | Heaven     | Nelson      | SVG          | 5                     |          1 |
+|       2150 | Ishaan     | Sheppard    | SVG          | 5                     |          1 |
+|       2973 | Jacquelyn  | Williams    | SVG          | 5                     |          1 |
+|       2101 | Justice    | Curry       | SVG          | 5                     |          1 |
+|       2738 | Kaeden     | Branch      | SVG          | 5                     |          1 |
+|       2974 | Kayla      | Peterson    | SVG          | 5                     |          1 |
+|       2190 | Kimberly   | Horn        | SVG          | 5                     |          1 |
+|       2834 | Madyson    | Silva       | SVG          | 5                     |          1 |
+|       2369 | Maximilian | Moyer       | SVG          | 5                     |          1 |
+|       3437 | Myriam     | Givens      | SVG          | 5                     |          1 |
+|       3267 | Perla      | Terry       | SVG          | 5                     |          1 |
+|       2207 | Sam        | Knight      | SVG          | 5                     |          1 |
+|       2508 | Selina     | Tapia       | SVG          | 5                     |          1 |
+|       3218 | Spencer    | Cole        | SVG          | 5                     |          1 |
+|       3224 | Sterling   | Davila      | SVG          | 5                     |          1 |
+|       2506 | Trey       | Johnston    | SVG          | 5                     |          1 |
+|       2300 | Wesley     | Nguyen      | SVG          | 5                     |          1 |
+|       2926 | Yareli     | Valdez      | SVG          | 5                     |          1 |
+|       2340 | Alice      | Dudley      | TNS          | 5                     |          1 |
+|       3737 | Arielle    | Escobar     | TNS          | 5                     |          1 |
+|       3728 | Aydan      | Robbins     | TNS          | 5                     |          1 |
+|       2953 | Cannon     | Morgan      | TNS          | 5                     |          1 |
+|       2679 | Christine  | Giles       | TNS          | 5                     |          1 |
+|       3157 | Deegan     | Pham        | TNS          | 5                     |          1 |
+|       3656 | Francesca  | Mcmahon     | TNS          | 5                     |          1 |
+|       3625 | Gabriel    | Dodson      | TNS          | 5                     |          1 |
+|       3134 | Heidi      | Joyce       | TNS          | 5                     |          1 |
+|       2250 | Irene      | Kim         | TNS          | 5                     |          1 |
+|       3011 | Isla       | Becker      | TNS          | 5                     |          1 |
+|       2121 | Jenna      | Cochran     | TNS          | 5                     |          1 |
+|       3091 | Kali       | Hensley     | TNS          | 5                     |          1 |
+|       2319 | Kaylee     | Harvey      | TNS          | 5                     |          1 |
+|       2434 | Liam       | Blevins     | TNS          | 5                     |          1 |
+|       2868 | Lisa       | Griffin     | TNS          | 5                     |          1 |
+|       2844 | Litzy      | Lloyd       | TNS          | 5                     |          1 |
+|       2710 | Madyson    | Yates       | TNS          | 5                     |          1 |
+|       2887 | Natalya    | Reyes       | TNS          | 5                     |          1 |
+|       2486 | Ricardo    | Ruiz        | TNS          | 5                     |          1 |
+|       2826 | Roger      | Kaufman     | TNS          | 5                     |          1 |
+|       3382 | Romeo      | Gordon      | TNS          | 5                     |          1 |
+|       2856 | Sage       | Boyer       | TNS          | 5                     |          1 |
+|       2370 | Salvador   | Robinson    | TNS          | 5                     |          1 |
+|       2713 | Abagail    | Villanueva  | WBL          | 5                     |          1 |
+|       3496 | Aspen      | Bentley     | WBL          | 5                     |          1 |
+|       3210 | Barbara M  | Stanford    | WBL          | 5                     |          1 |
+|       2550 | Beckett    | Beck        | WBL          | 5                     |          1 |
+|       2619 | Carlo      | Giles       | WBL          | 5                     |          1 |
+|       2733 | Davian     | Davis       | WBL          | 5                     |          1 |
+|       2398 | Davion     | Hahn        | WBL          | 5                     |          1 |
+|       2342 | Eli        | Owens       | WBL          | 5                     |          1 |
+|       3251 | Elliana    | Thomas      | WBL          | 5                     |          1 |
+|       2778 | Javon      | Mckenzie    | WBL          | 5                     |          1 |
+|       2637 | Kaia       | Hernandez   | WBL          | 5                     |          1 |
+|       3407 | Kamila     | Sanders     | WBL          | 5                     |          1 |
+|       2256 | Kaylyn     | Pham        | WBL          | 5                     |          1 |
+|       2211 | Leonara    | Lindsay     | WBL          | 5                     |          1 |
+|       2208 | Lisa       | Galia       | WBL          | 5                     |          1 |
+|       2245 | Londyn     | Underwood   | WBL          | 5                     |          1 |
+|       3499 | Maci       | Frost       | WBL          | 5                     |          1 |
+|       2718 | Madalyn    | Prince      | WBL          | 5                     |          1 |
+|       2671 | Nasir      | Glass       | WBL          | 5                     |          1 |
+|       2264 | Piper      | Guzman      | WBL          | 5                     |          1 |
+|       3171 | Regina     | Lopez       | WBL          | 5                     |          1 |
+|       2451 | Rosa       | Rosales     | WBL          | 5                     |          1 |
+|       2647 | Rylan      | Key         | WBL          | 5                     |          1 |
+|       2185 | Salvatore  | Snyder      | WBL          | 5                     |          1 |
+|       3124 | Taliyah    | Yang        | WBL          | 5                     |          1 |
+|       3572 | Timothy    | Sullivan    | WBL          | 5                     |          1 |
+|       3001 | Trent      | Sandoval    | WBL          | 5                     |          1 |
++------------+------------+-------------+--------------+-----------------------+------------+
+270 rows in set (0.01 sec)
+
++------------+-----------+------------+----------------------+------------+---------------+
+| EmployeeID | FirstName | LastName   | DepartmentType       | StartDate  | SeniorityRank |
++------------+-----------+------------+----------------------+------------+---------------+
+|       1352 | Lily      | Tyler      | Admin Offices        | 2018-08-08 |             1 |
+|       1337 | Sherlyn   | Carroll    | Admin Offices        | 2018-08-10 |             2 |
+|       1667 | George    | Sheppard   | Admin Offices        | 2018-08-28 |             3 |
+|       1357 | Angeline  | Perez      | Admin Offices        | 2018-09-07 |             4 |
+|       3867 | Lena      | Sandoval   | Executive Office     | 2018-08-26 |             1 |
+|       3878 | Carter    | Cook       | Executive Office     | 2018-09-08 |             2 |
+|       3877 | Oscar     | Lopez      | Executive Office     | 2018-10-22 |             3 |
+|       1316 | Janet     | King       | Executive Office     | 2019-01-20 |             4 |
+|       3872 | Lorena    | Rice       | IT/IS                | 2018-08-10 |             1 |
+|       3820 | Anita     | Shepard    | IT/IS                | 2018-08-11 |             2 |
+|       3960 | Andreas   | Torres     | IT/IS                | 2018-08-11 |             3 |
+|       2228 | Kayley    | Romero     | IT/IS                | 2018-08-12 |             4 |
+|       3290 | Jaiden    | Middleton  | Production           | 2018-08-07 |             1 |
+|       2911 | Estrella  | Ho         | Production           | 2018-08-07 |             2 |
+|       3248 | Micah     | Douglas    | Production           | 2018-08-07 |             3 |
+|       1892 | Saniya    | Buck       | Production           | 2018-08-07 |             4 |
+|       3438 | Dheepa    | Nguyen     | Sales                | 2018-08-10 |             1 |
+|       3551 | Emery     | Roach      | Sales                | 2018-08-11 |             2 |
+|       3435 | Jac       | McKinzie   | Sales                | 2018-08-18 |             3 |
+|       2712 | Helen     | Humphrey   | Sales                | 2018-08-19 |             4 |
+|       1065 | Nathaly   | Cooper     | Software Engineering | 2018-08-28 |             1 |
+|       1055 | Chaz      | Webb       | Software Engineering | 2018-09-08 |             2 |
+|       1060 | Frida     | Livingston | Software Engineering | 2018-10-10 |             3 |
+|       1069 | Wyatt     | Edwards    | Software Engineering | 2018-10-13 |             4 |
++------------+-----------+------------+----------------------+------------+---------------+
+24 rows in set (0.01 sec)
+
++------------+-----------+----------+----------------+------------+------------------+
+| EmployeeID | FirstName | LastName | DepartmentType | StartDate  | PreviousEmployee |
++------------+-----------+----------+----------------+------------+------------------+
+|       1352 | Lily      | Tyler    | Admin Offices  | 2018-08-08 | NULL             |
+|       1337 | Sherlyn   | Carroll  | Admin Offices  | 2018-08-10 | Lily             |
+|       1667 | George    | Sheppard | Admin Offices  | 2018-08-28 | Sherlyn          |
+|       1357 | Angeline  | Perez    | Admin Offices  | 2018-09-07 | George           |
+|       2283 | Sean      | Quinn    | Admin Offices  | 2018-10-03 | Angeline         |
++------------+-----------+----------+----------------+------------+------------------+
+5 rows in set (0.01 sec)
+
++------------+-----------+-----------+--------------+------------------+---------------+
+| EmployeeID | FirstName | LastName  | Title        | PerformanceScore | NextPerfScore |
++------------+-----------+-----------+--------------+------------------+---------------+
+|       1337 | Sherlyn   | Carroll   | Accountant I | Fully Meets      | Fully Meets   |
+|       1357 | Angeline  | Perez     | Accountant I | Fully Meets      | Fully Meets   |
+|       1358 | Jairo     | Blanchard | Accountant I | Fully Meets      | Exceeds       |
+|       1364 | Mollie    | Jenkins   | Accountant I | Exceeds          | Fully Meets   |
+|       2602 | Jacquelyn | Austin    | Accountant I | Fully Meets      | Fully Meets   |
++------------+-----------+-----------+--------------+------------------+---------------+
+5 rows in set (0.00 sec)
+
++------------+-----------+-----------+-------+----------------------+------------+------+----------------+
+| EmployeeID | FirstName | LastName  | State | DepartmentType       | DOB        | Age  | SeniorityByAge |
++------------+-----------+-----------+-------+----------------------+------------+------+----------------+
+|       1690 | Kyler     | Morales   | MA    | Admin Offices        | 1942-01-20 |   83 |              1 |
+|       1018 | Alan      | Haynes    | MA    | Admin Offices        | 1942-02-24 |   83 |              2 |
+|       3854 | Jayden    | Mckee     | MA    | Executive Office     | 1942-01-24 |   83 |              1 |
+|       3833 | Elise     | Vazquez   | MA    | Executive Office     | 1953-05-12 |   71 |              2 |
+|       2513 | Trinity   | Estes     | MA    | IT/IS                | 1941-10-18 |   83 |              1 |
+|       3926 | Jeffery   | Gamble    | MA    | IT/IS                | 1941-12-16 |   83 |              2 |
+|       1141 | Cade      | Cox       | MA    | Production           | 1941-08-14 |   83 |              1 |
+|       2022 | Jocelyn   | Valentine | MA    | Production           | 1941-08-30 |   83 |              2 |
+|       1941 | Deven     | Frazier   | PA    | Sales                | 1941-10-06 |   83 |              1 |
+|       3517 | Milagros  | Francis   | IN    | Sales                | 1942-01-04 |   83 |              2 |
+|       1058 | Lena      | Bryan     | MA    | Software Engineering | 1942-03-13 |   83 |              1 |
+|       1042 | Milo      | Hood      | MA    | Software Engineering | 1942-08-18 |   82 |              2 |
++------------+-----------+-----------+-------+----------------------+------------+------+----------------+
+12 rows in set (0.02 sec)
+
++------------+-----------+------------+----------+------------+------------+
+| EmployeeID | FirstName | StartDate  | ExitDate | TenureDays | TenureRank |
++------------+-----------+------------+----------+------------+------------+
+|       2911 | Estrella  | 2018-08-07 | NULL     |       2437 |          1 |
+|       3290 | Jaiden    | 2018-08-07 | NULL     |       2437 |          1 |
+|       1892 | Saniya    | 2018-08-07 | NULL     |       2437 |          1 |
+|       2168 | Rashad    | 2018-08-08 | NULL     |       2436 |          2 |
+|       3960 | Andreas   | 2018-08-11 | NULL     |       2433 |          3 |
+|       3551 | Emery     | 2018-08-11 | NULL     |       2433 |          3 |
++------------+-----------+------------+----------+------------+------------+
+6 rows in set (0.01 sec)
+
++-----------+----------+----------------------+------------+
+| FirstName | LastName | DepartmentType       | StartDate  |
++-----------+----------+----------------------+------------+
+| Lily      | Tyler    | Admin Offices        | 2018-08-08 |
+| Lena      | Sandoval | Executive Office     | 2018-08-26 |
+| Lorena    | Rice     | IT/IS                | 2018-08-10 |
+| Estrella  | Ho       | Production           | 2018-08-07 |
+| Dheepa    | Nguyen   | Sales                | 2018-08-10 |
+| Nathaly   | Cooper   | Software Engineering | 2018-08-28 |
++-----------+----------+----------------------+------------+
+6 rows in set (0.02 sec)
