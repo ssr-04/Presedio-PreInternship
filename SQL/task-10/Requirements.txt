@@ -1,0 +1,27 @@
+💼 Business Use Case: eCommerce Platform
+
+This platform should allow users to:
+
+- Browse products
+- Register as customers
+- Place and track orders
+- Manage inventory
+- Process payments
+
+📌 Functional Requirements:
+
+- Customer registration and profile management
+- Product management with stock levels
+- Order placement and detailed order items
+- Automatic inventory update upon orders
+- View order history
+- Track changes in product data (audit logs)
+
+⚙️ Non-Functional Requirements:
+
+- Maintain data integrity via constraints
+- Ensure performance using indexes and optimization
+- Use triggers for automation (e.g., auto inventory deduction)
+- Use transactions for atomic operations
+- Simplify data access via views
+- Proper documentation and test scripts
