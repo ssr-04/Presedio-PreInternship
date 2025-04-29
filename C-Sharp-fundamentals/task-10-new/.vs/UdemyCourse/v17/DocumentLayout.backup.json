@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Documents\\Learning\\UdemyCSharp\\UdemyCourse\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC14C2FB-F8A7-48AD-A60F-7BA5946EF5A1}|UdemyCourse.API\\UdemyCourse.API.csproj|c:\\users\\vc\\documents\\learning\\udemycsharp\\udemycourse\\udemycourse.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC14C2FB-F8A7-48AD-A60F-7BA5946EF5A1}|UdemyCourse.API\\UdemyCourse.API.csproj|solutionrelative:udemycourse.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC14C2FB-F8A7-48AD-A60F-7BA5946EF5A1}|UdemyCourse.API\\UdemyCourse.API.csproj|c:\\users\\vc\\documents\\learning\\udemycsharp\\udemycourse\\udemycourse.api\\models\\dto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC14C2FB-F8A7-48AD-A60F-7BA5946EF5A1}|UdemyCourse.API\\UdemyCourse.API.csproj|solutionrelative:udemycourse.api\\models\\dto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC14C2FB-F8A7-48AD-A60F-7BA5946EF5A1}|UdemyCourse.API\\UdemyCourse.API.csproj|c:\\users\\vc\\documents\\learning\\udemycsharp\\udemycourse\\udemycourse.api\\repositories\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC14C2FB-F8A7-48AD-A60F-7BA5946EF5A1}|UdemyCourse.API\\UdemyCourse.API.csproj|solutionrelative:udemycourse.api\\repositories\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC14C2FB-F8A7-48AD-A60F-7BA5946EF5A1}|UdemyCourse.API\\UdemyCourse.API.csproj|c:\\users\\vc\\documents\\learning\\udemycsharp\\udemycourse\\udemycourse.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC14C2FB-F8A7-48AD-A60F-7BA5946EF5A1}|UdemyCourse.API\\UdemyCourse.API.csproj|solutionrelative:udemycourse.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC14C2FB-F8A7-48AD-A60F-7BA5946EF5A1}|UdemyCourse.API\\UdemyCourse.API.csproj|c:\\users\\vc\\documents\\learning\\udemycsharp\\udemycourse\\udemycourse.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC14C2FB-F8A7-48AD-A60F-7BA5946EF5A1}|UdemyCourse.API\\UdemyCourse.API.csproj|solutionrelative:udemycourse.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC14C2FB-F8A7-48AD-A60F-7BA5946EF5A1}|UdemyCourse.API\\UdemyCourse.API.csproj|c:\\users\\vc\\documents\\learning\\udemycsharp\\udemycourse\\udemycourse.api\\repositories\\itokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC14C2FB-F8A7-48AD-A60F-7BA5946EF5A1}|UdemyCourse.API\\UdemyCourse.API.csproj|solutionrelative:udemycourse.api\\repositories\\itokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Learning\\UdemyCSharp\\UdemyCourse\\UdemyCourse.API\\appsettings.json",
+              "RelativeDocumentMoniker": "UdemyCourse.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Learning\\UdemyCSharp\\UdemyCourse\\UdemyCourse.API\\appsettings.json",
+              "RelativeToolTip": "UdemyCourse.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-29T17:09:01.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Learning\\UdemyCSharp\\UdemyCourse\\UdemyCourse.API\\Models\\DTO\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "UdemyCourse.API\\Models\\DTO\\LoginResponseDto.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Learning\\UdemyCSharp\\UdemyCourse\\UdemyCourse.API\\Models\\DTO\\LoginResponseDto.cs",
+              "RelativeToolTip": "UdemyCourse.API\\Models\\DTO\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T16:59:57.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TokenRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Learning\\UdemyCSharp\\UdemyCourse\\UdemyCourse.API\\Repositories\\TokenRepository.cs",
+              "RelativeDocumentMoniker": "UdemyCourse.API\\Repositories\\TokenRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Learning\\UdemyCSharp\\UdemyCourse\\UdemyCourse.API\\Repositories\\TokenRepository.cs",
+              "RelativeToolTip": "UdemyCourse.API\\Repositories\\TokenRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwCcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T15:56:01.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ITokenRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Learning\\UdemyCSharp\\UdemyCourse\\UdemyCourse.API\\Repositories\\ITokenRepository.cs",
+              "RelativeDocumentMoniker": "UdemyCourse.API\\Repositories\\ITokenRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Learning\\UdemyCSharp\\UdemyCourse\\UdemyCourse.API\\Repositories\\ITokenRepository.cs",
+              "RelativeToolTip": "UdemyCourse.API\\Repositories\\ITokenRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T15:54:12.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Learning\\UdemyCSharp\\UdemyCourse\\UdemyCourse.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "UdemyCourse.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Learning\\UdemyCSharp\\UdemyCourse\\UdemyCourse.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "UdemyCourse.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAuwEwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T15:14:58.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Learning\\UdemyCSharp\\UdemyCourse\\UdemyCourse.API\\Program.cs",
+              "RelativeDocumentMoniker": "UdemyCourse.API\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Learning\\UdemyCSharp\\UdemyCourse\\UdemyCourse.API\\Program.cs",
+              "RelativeToolTip": "UdemyCourse.API\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAwwDQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T09:02:38.886Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
