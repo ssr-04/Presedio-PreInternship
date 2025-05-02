@@ -1,12 +1,14 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
 
 class ListManager
 {
-    static List<string> items = [];
+    static ItemService itemService = new ItemService();
 
-    static void Main() {
-
-        while(true){
+    static void Main()
+    {
+        while (true)
+        {
             Console.WriteLine("\nOptions");
             Console.WriteLine("1. Add Item");
             Console.WriteLine("2. Remove Item");
@@ -19,13 +21,13 @@ class ListManager
             switch (choice)
             {
                 case "1":
-                    AddItem();
+                    itemService.AddItem();
                     break;
                 case "2":
-                    RemoveItem();
+                    itemService.RemoveItem();
                     break;
                 case "3":
-                    DisplayItems();
+                    itemService.DisplayItems();
                     break;
                 case "4":
                     Console.WriteLine("Exiting program...");
@@ -36,38 +38,53 @@ class ListManager
             }
         }
     }
+}
 
-    static void AddItem() {
+class ItemService
+{
+    private List<string> items = new List<string>();
 
+    public void AddItem()
+    {
         Console.Write("Enter Item to add: ");
         string item = (Console.ReadLine() ?? string.Empty).Trim();
 
-        if(!string.IsNullOrWhiteSpace(item)){
+        if (!string.IsNullOrWhiteSpace(item))
+        {
             items.Add(item);
             Console.WriteLine($"Added: {item.ToUpper()}");
-        } else {
+        }
+        else
+        {
             Console.WriteLine("Item cannot be empty.");
         }
     }
 
-    static void RemoveItem() {
-
+    public void RemoveItem()
+    {
         Console.Write("Enter item name to remove: ");
         string item = (Console.ReadLine() ?? string.Empty).Trim();
 
-        if(!string.IsNullOrWhiteSpace(item) && items.Remove(item)){
+        if (!string.IsNullOrWhiteSpace(item) && items.Remove(item))
+        {
             Console.WriteLine($"Removed: {item.ToUpper()}");
-        } else {
+        }
+        else
+        {
             Console.WriteLine("Item not found.");
         }
     }
 
-    static void DisplayItems() {
-        if(items.Count == 0) {
+    public void DisplayItems()
+    {
+        if (items.Count == 0)
+        {
             Console.WriteLine("The list is empty.");
-        } else {
-            for(int i = 0; i < items.Count; i++)
-            Console.WriteLine($"{i + 1}. {items[i].ToUpper()}");
+        }
+        else
+        {
+            for (int i = 0; i < items.Count; i++)
+                Console.WriteLine($"{i + 1}. {items[i].ToUpper()}");
         }
     }
 }
